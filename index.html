@@ -3,13 +3,13 @@
 
 <head>
     <meta charset="utf-8">
-    <title img="logo.png">destinavia.in</title>
+    <title>Destinavia.in</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Destinavia" name="keywords">
     <meta content="Destinavia" name="description">
 
     <!-- Favicon -->
-    <link href="" rel="icon">
+    <link href="img/Black logo.jpg" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -77,9 +77,9 @@
                 <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
                     <div class="navbar-nav ml-auto py-0">
                         <a href="" class="nav-item nav-link active">Home</a>
-                        <a href="" class="nav-item nav-link">About</a>
-                        <a href="" class="nav-item nav-link">Services</a>
-                        <a href="" class="nav-item nav-link">Tour Packages</a>
+                        <a href="#About" class="nav-item nav-link">About</a>
+                        <a href="#Service" class="nav-item nav-link">Services</a>
+                        <a href="#TourPackages" class="nav-item nav-link">Tour Packages</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
                             <div class="dropdown-menu border-0 rounded-0 m-0">
@@ -90,7 +90,7 @@
                                 <a href="" class="dropdown-item">Testimonial</a>
                             </div>
                         </div>
-                        <a href="" class="nav-item nav-link">Contact</a>
+                        <a href="#Contact" class="nav-item nav-link">Contact</a>
                     </div>
                 </div>
             </nav>
@@ -200,7 +200,7 @@
 
 
     <!-- About Start -->
-    <div class="container-fluid py-5">
+    <div id="About" class="container-fluid py-5">
         <div class="container pt-5">
             <div class="row">
                 <div class="col-lg-6" style="min-height: 500px;">
@@ -274,7 +274,7 @@
 
 
     <!-- Destination Start -->
-    <div class="container-fluid py-5">
+    <div id="Destination" class="container-fluid py-5">
         <div class="container pt-5 pb-3">
             <div class="text-center mb-3 pb-3">
                 <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Destination</h6>
@@ -369,7 +369,7 @@
 
 
     <!-- Service Start -->
-    <div class="container-fluid py-5">
+    <div id="Service" class="container-fluid py-5">
         <div class="container pt-5 pb-3">
             <div class="text-center mb-3 pb-3">
                 <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Services</h6>
@@ -404,7 +404,7 @@
 
 
     <!-- Packages Start -->
-    <div class="container-fluid py-5">
+    <div id="TourPackages" class="container-fluid py-5">
         <div class="container pt-5 pb-3">
             <div class="text-center mb-3 pb-3">
                 <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Packages</h6>
@@ -554,7 +554,7 @@
                             <h1 class="text-white m-0">Let us know your details</h1>
                         </div>
                         <div class="card-body rounded-bottom bg-white p-5">
-                            <form>
+                            <form action="" method="">
                                 <div class="form-group">
                                     <input type="text" class="form-control p-4" placeholder="Name" required="required" />
                                 </div>
@@ -609,7 +609,7 @@
 
 
     <!-- Blog Start -->
-    <div class="container-fluid py-5">
+    <div id="Blog" class="container-fluid py-5">
         <div class="container pt-5 pb-3">
             <div class="text-center mb-3 pb-3">
                 <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Blog</h6>
@@ -698,13 +698,13 @@
             <div class="col-lg-3 col-md-6 mb-5">
                 <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Our Services</h5>
                 <div class="d-flex flex-column justify-content-start">
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Destination</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Services</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Packages</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Guides</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Testimonial</a>
-                    <a class="text-white-50" href="#"><i class="fa fa-angle-right mr-2"></i>Blog</a>
+                    <a class="text-white-50 mb-2" href="#About"><i class="fa fa-angle-right mr-2"></i>About</a>
+                    <a class="text-white-50 mb-2" href="#Destination"><i class="fa fa-angle-right mr-2"></i>Destination</a>
+                    <a class="text-white-50 mb-2" href="#Service"><i class="fa fa-angle-right mr-2"></i>Services</a>
+                    <a class="text-white-50 mb-2" href="#TourPackage"><i class="fa fa-angle-right mr-2"></i>Packages</a>
+                    <!-- <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Guides</a> -->
+                    <!-- <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Testimonial</a> -->
+                    <a class="text-white-50" href="#Blog"><i class="fa fa-angle-right mr-2"></i>Blog</a>
                 </div>
             </div>
             <!-- <div class="col-lg-3 col-md-6 mb-5"> -->
@@ -719,17 +719,20 @@
                     <!-- <a class="text-white-50" href="#"><i class="fa fa-angle-right mr-2"></i>Blog</a> -->
                 <!-- </div> -->
             <!-- </div> -->
-            <div class="col-lg-3 col-md-6 mb-5">
+            <div id="Contact" class="col-lg-3 col-md-6 mb-5">
                 <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Contact Us</h5>
                 <p><i class="fa fa-map-marker-alt mr-2"></i>Destinavia.in 2/45, Jangpura, New Delhi, Delhi 110014</p>
-                <p><i class="fa fa-phone-alt mr-2"></i>7034680076,6282280978</p>
+                <p class="fa fa-phone-alt mr-2"><a href="https://api.whatsapp.com/send/?phone=917034680076&text&type=phone_number&app_absent=0">7034680076</a>
+                <p class="fa fa-phone-alt mr-2"><a href="https://api.whatsapp.com/send/?phone=916282280978&text&type=phone_number&app_absent=0">6282280978</a>
+    
+
                 <p><i class="fa fa-envelope mr-2"></i>destinavia.in@gmail.com</p>
-                <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Newsletter</h6>
+                <!-- <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Newsletter</h6> -->
                 <div class="w-100">
                     <div class="input-group">
-                        <input type="text" class="form-control border-light" style="padding: 25px;" placeholder="Your Email">
+                        <!-- <input type="text" class="form-control border-light" style="padding: 25px;" placeholder="Your Email"> -->
                         <div class="input-group-append">
-                            <button class="btn btn-primary px-3">Sign Up</button>
+                            <!-- |<button class="btn btn-primary px-3">Sign Up</button> -->
                         </div>
                     </div>
                 </div>
@@ -743,7 +746,7 @@
                 </p>
             </div>
             <div class="col-lg-6 text-center text-md-right">
-                <p class="m-0 text-white-50">Designed by <a href="">Destinavia.in</a>
+                <p class="m-0 text-white-50">Designed by <a href="#">Destinavia.in</a>
                 </p>
             </div>
         </div>
