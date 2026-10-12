@@ -387,7 +387,7 @@
           </button>
 
           <!-- Pilgrimage -->
-          <button class="hero-cat-chip group flex items-center gap-3 py-1.5 px-3.5 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800/60 transition-all select-none" onclick="filterBySector('Family')">
+          <button class="hero-cat-chip group flex items-center gap-3 py-1.5 px-3.5 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800/60 transition-all select-none" onclick="filterBySector('Pilgrimage', event)">
             <img src="https://images.unsplash.com/photo-1593693397690-362cb9666fc2?auto=format&fit=crop&w=80&h=80&q=80" alt="Pilgrimage" class="w-10 h-10 rounded-full object-cover border-2 border-brand-blue">
             <span class="text-xs md:text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:text-brand-blue transition-colors">Pilgrimage</span>
           </button>
@@ -452,6 +452,7 @@
           <button class="pkg-filter-btn px-5 py-2 rounded-full text-sm font-semibold bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 hover:border-brand-blue transition-all" data-category="Corporate">Corporate Retreats</button>
           <button class="pkg-filter-btn px-5 py-2 rounded-full text-sm font-semibold bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 hover:border-brand-blue transition-all" data-category="Family">Family Trips</button>
           <button class="pkg-filter-btn px-5 py-2 rounded-full text-sm font-semibold bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 hover:border-brand-blue transition-all" data-category="Adventure">Adventure</button>
+          <button class="pkg-filter-btn px-5 py-2 rounded-full text-sm font-semibold bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 hover:border-brand-blue transition-all" data-category="Pilgrimage">Pilgrimage & Sacred</button>
         </div>
 
         <!-- Packages List Grid -->
@@ -550,87 +551,92 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <!-- Honeymoon -->
-          <div class="glass-panel glass-panel-hover p-8 rounded-3xl text-left relative overflow-hidden flex flex-col justify-between min-h-[300px]">
+          <div class="glass-panel glass-panel-hover p-8 rounded-3xl text-left relative overflow-hidden flex flex-col justify-between min-h-[300px] cursor-pointer group hover:-translate-y-1 transition-all" onclick="filterBySector('Honeymoon', event)">
             <div>
-              <div class="w-12 h-12 rounded-2xl bg-pink-500/10 flex items-center justify-center mb-6 text-pink-600 dark:text-pink-400">
+              <div class="w-12 h-12 rounded-2xl bg-pink-500/10 flex items-center justify-center mb-6 text-pink-600 dark:text-pink-400 group-hover:scale-110 transition-transform">
                 <i data-lucide="heart" class="w-6 h-6"></i>
               </div>
-              <h3 class="text-2xl font-bold mb-3">Honeymoon & Romance</h3>
+              <h3 class="text-2xl font-bold mb-3 group-hover:text-brand-blue dark:group-hover:text-brand-cyan transition-colors">Honeymoon & Romance</h3>
               <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">Luxury candlelit beach dinners, floating breakfasts in private pool villas, and couples spa retreats in secluded valleys.</p>
             </div>
-            <a href="#packages" onclick="filterBySector('Honeymoon')" class="text-brand-blue dark:text-brand-cyan font-bold text-sm inline-flex items-center gap-1 hover:underline mt-6">
+            <a href="#packages" onclick="filterBySector('Honeymoon', event)" class="text-brand-blue dark:text-brand-cyan font-bold text-sm inline-flex items-center gap-1 hover:underline mt-6">
               View Packages <i data-lucide="chevron-right" class="w-4 h-4"></i>
             </a>
           </div>
 
           <!-- Corporate Tours -->
-          <div class="glass-panel glass-panel-hover p-8 rounded-3xl text-left relative overflow-hidden flex flex-col justify-between min-h-[300px]">
+          <div class="glass-panel glass-panel-hover p-8 rounded-3xl text-left relative overflow-hidden flex flex-col justify-between min-h-[300px] cursor-pointer group hover:-translate-y-1 transition-all" onclick="filterBySector('Corporate', event)">
             <div>
-              <div class="w-12 h-12 rounded-2xl bg-brand-blue/10 flex items-center justify-center mb-6 text-brand-blue dark:text-brand-cyan">
+              <div class="w-12 h-12 rounded-2xl bg-brand-blue/10 flex items-center justify-center mb-6 text-brand-blue dark:text-brand-cyan group-hover:scale-110 transition-transform">
                 <i data-lucide="briefcase" class="w-6 h-6"></i>
               </div>
-              <h3 class="text-2xl font-bold mb-3">Corporate Retreats & MICE</h3>
+              <h3 class="text-2xl font-bold mb-3 group-hover:text-brand-blue dark:group-hover:text-brand-cyan transition-colors">Corporate Retreats & MICE</h3>
               <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">Conferences, team-building retreats, sunset yacht meetings, gala dinners, and completely hassle-free GST billing compliance.</p>
             </div>
-            <a href="#packages" onclick="filterBySector('Corporate')" class="text-brand-blue dark:text-brand-cyan font-bold text-sm inline-flex items-center gap-1 hover:underline mt-6">
+            <a href="#packages" onclick="filterBySector('Corporate', event)" class="text-brand-blue dark:text-brand-cyan font-bold text-sm inline-flex items-center gap-1 hover:underline mt-6">
               View Retreats <i data-lucide="chevron-right" class="w-4 h-4"></i>
             </a>
           </div>
 
           <!-- Industrial Visits -->
-          <div class="glass-panel glass-panel-hover p-8 rounded-3xl text-left relative overflow-hidden flex flex-col justify-between min-h-[300px]">
+          <div class="glass-panel glass-panel-hover p-8 rounded-3xl text-left relative overflow-hidden flex flex-col justify-between min-h-[300px] cursor-pointer group hover:-translate-y-1 transition-all" onclick="filterBySector('Industrial Visits', event)">
             <div>
-              <div class="w-12 h-12 rounded-2xl bg-brand-cyan/10 flex items-center justify-center mb-6 text-brand-cyan dark:text-brand-cyan">
+              <div class="w-12 h-12 rounded-2xl bg-brand-cyan/10 flex items-center justify-center mb-6 text-brand-cyan dark:text-brand-cyan group-hover:scale-110 transition-transform">
                 <i data-lucide="factory" class="w-6 h-6"></i>
               </div>
-              <h3 class="text-2xl font-bold mb-3">Industrial Visits & Colleges</h3>
+              <h3 class="text-2xl font-bold mb-3 group-hover:text-brand-blue dark:group-hover:text-brand-cyan transition-colors">Industrial Visits & Colleges</h3>
               <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">Permissions at top manufacturing sites, quad-sharing student accommodations, sleeper bus fleets, and safety certified guides.</p>
             </div>
-            <a href="#packages" onclick="filterBySector('Industrial Visits')" class="text-brand-blue dark:text-brand-cyan font-bold text-sm inline-flex items-center gap-1 hover:underline mt-6">
+            <a href="#packages" onclick="filterBySector('Industrial Visits', event)" class="text-brand-blue dark:text-brand-cyan font-bold text-sm inline-flex items-center gap-1 hover:underline mt-6">
               View Student Tours <i data-lucide="chevron-right" class="w-4 h-4"></i>
             </a>
           </div>
 
           <!-- Adventure -->
-          <div class="glass-panel glass-panel-hover p-8 rounded-3xl text-left relative overflow-hidden flex flex-col justify-between min-h-[300px]">
+          <div class="glass-panel glass-panel-hover p-8 rounded-3xl text-left relative overflow-hidden flex flex-col justify-between min-h-[300px] cursor-pointer group hover:-translate-y-1 transition-all" onclick="filterBySector('Adventure', event)">
             <div>
-              <div class="w-12 h-12 rounded-2xl bg-emerald-500/10 flex items-center justify-center mb-6 text-emerald-600 dark:text-emerald-400">
+              <div class="w-12 h-12 rounded-2xl bg-emerald-500/10 flex items-center justify-center mb-6 text-emerald-600 dark:text-emerald-400 group-hover:scale-110 transition-transform">
                 <i data-lucide="compass" class="w-6 h-6"></i>
               </div>
-              <h3 class="text-2xl font-bold mb-3">Adventure Expeditions</h3>
+              <h3 class="text-2xl font-bold mb-3 group-hover:text-brand-blue dark:group-hover:text-brand-cyan transition-colors">Adventure Expeditions</h3>
               <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">Trekking high mountain passes in Ladakh, scuba diving in pristine reefs, and extreme sports packages under expert safety oversight.</p>
             </div>
-            <a href="#packages" onclick="filterBySector('Adventure')" class="text-brand-blue dark:text-brand-cyan font-bold text-sm inline-flex items-center gap-1 hover:underline mt-6">
+            <a href="#packages" onclick="filterBySector('Adventure', event)" class="text-brand-blue dark:text-brand-cyan font-bold text-sm inline-flex items-center gap-1 hover:underline mt-6">
               View Expeditions <i data-lucide="chevron-right" class="w-4 h-4"></i>
             </a>
           </div>
 
           <!-- Family Vacations -->
-          <div class="glass-panel glass-panel-hover p-8 rounded-3xl text-left relative overflow-hidden flex flex-col justify-between min-h-[300px]">
+          <div class="glass-panel glass-panel-hover p-8 rounded-3xl text-left relative overflow-hidden flex flex-col justify-between min-h-[300px] cursor-pointer group hover:-translate-y-1 transition-all" onclick="filterBySector('Family', event)">
             <div>
-              <div class="w-12 h-12 rounded-2xl bg-amber-500/10 flex items-center justify-center mb-6 text-amber-600 dark:text-amber-400">
+              <div class="w-12 h-12 rounded-2xl bg-amber-500/10 flex items-center justify-center mb-6 text-amber-600 dark:text-amber-400 group-hover:scale-110 transition-transform">
                 <i data-lucide="users" class="w-6 h-6"></i>
               </div>
-              <h3 class="text-2xl font-bold mb-3">Family & Leisure Holidays</h3>
+              <h3 class="text-2xl font-bold mb-3 group-hover:text-brand-blue dark:group-hover:text-brand-cyan transition-colors">Family & Leisure Holidays</h3>
               <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">Meticulously paced multigenerational tours featuring kid-friendly activities, luxury resorts, and spacious private transfers.</p>
             </div>
-            <a href="#packages" onclick="filterBySector('Family')" class="text-brand-blue dark:text-brand-cyan font-bold text-sm inline-flex items-center gap-1 hover:underline mt-6">
+            <a href="#packages" onclick="filterBySector('Family', event)" class="text-brand-blue dark:text-brand-cyan font-bold text-sm inline-flex items-center gap-1 hover:underline mt-6">
               View Family Packages <i data-lucide="chevron-right" class="w-4 h-4"></i>
             </a>
           </div>
 
           <!-- Pilgrimage & Culture -->
-          <div class="glass-panel glass-panel-hover p-8 rounded-3xl text-left relative overflow-hidden flex flex-col justify-between min-h-[300px]">
+          <div class="glass-panel glass-panel-hover p-8 rounded-3xl text-left relative overflow-hidden flex flex-col justify-between min-h-[300px] cursor-pointer group hover:-translate-y-1 transition-all" onclick="filterBySector('Pilgrimage', event)">
             <div>
-              <div class="w-12 h-12 rounded-2xl bg-indigo-500/10 flex items-center justify-center mb-6 text-indigo-600 dark:text-indigo-400">
+              <div class="w-12 h-12 rounded-2xl bg-indigo-500/10 flex items-center justify-center mb-6 text-indigo-600 dark:text-indigo-400 group-hover:scale-110 transition-transform">
                 <i data-lucide="sun" class="w-6 h-6"></i>
               </div>
-              <h3 class="text-2xl font-bold mb-3">Pilgrimage & Sacred Heritage</h3>
+              <h3 class="text-2xl font-bold mb-3 group-hover:text-brand-blue dark:group-hover:text-brand-cyan transition-colors">Pilgrimage & Sacred Heritage</h3>
               <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">Spiritual trails, VIP temple entry clearances, comfortable stays, and guided historical walkthroughs across holy cities.</p>
             </div>
-            <a href="#contact" class="text-brand-blue dark:text-brand-cyan font-bold text-sm inline-flex items-center gap-1 hover:underline mt-6">
-              Request Custom Itinerary <i data-lucide="chevron-right" class="w-4 h-4"></i>
-            </a>
+            <div class="flex items-center justify-between mt-6">
+              <a href="#packages" onclick="filterBySector('Pilgrimage', event)" class="text-brand-blue dark:text-brand-cyan font-bold text-sm inline-flex items-center gap-1 hover:underline">
+                View Pilgrimage <i data-lucide="chevron-right" class="w-4 h-4"></i>
+              </a>
+              <a href="#contact" onclick="event.stopPropagation(); if (typeof prefillInquiry === 'function') prefillInquiry('Pilgrimage & Sacred Heritage');" class="text-slate-400 hover:text-brand-blue dark:hover:text-brand-cyan text-xs font-semibold inline-flex items-center gap-1">
+                Custom Plan <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>

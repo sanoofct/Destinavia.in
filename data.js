@@ -243,6 +243,22 @@ const DESTINAVIA_DATA = {
       inclusions: ["JR Bullet Train Pass", "English-speaking Local Guide", "Tea Ceremony Experience", "Hot Spring Ryokan Stay", "Authentic Kaiseki Dinners"],
       highlights: ["Stroll through Kyoto's bamboo forests", "Mount Fuji view from Lake Kawaguchi", "Neon food tour in Shinjuku, Tokyo"],
       badge: "Limited Availability"
+    },
+    {
+      id: "varanasi-amritsar-spiritual",
+      title: "Sacred Heritage & Spiritual Trail: Varanasi & Golden Temple",
+      destination: "India",
+      destinationId: "rajasthan",
+      priceINR: 32000,
+      rating: 4.9,
+      reviewsCount: 88,
+      durationDays: 5,
+      durationNights: 4,
+      category: "Pilgrimage",
+      image: "Img/gallery_goldentemple.jpg",
+      inclusions: ["VIP Temple Darshan Passes", "Private Ganga Aarti Boat", "Heritage Haveli Stay", "All Vegetarian Meals", "Dedicated Spiritual Guide"],
+      highlights: ["Sunrise boat cruise along sacred Ganges ghats", "Evening Ganga Aarti ceremony at Dashashwamedh", "Golden Temple Palki Sahib ceremony & community Langar"],
+      badge: "Spiritual Exclusive"
     }
   ],
 

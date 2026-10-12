@@ -50,6 +50,11 @@ html {
   transition: background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1), color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* Ensure anchor scroll targets offset below sticky header */
+[id] {
+  scroll-margin-top: 5.5rem;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -108,6 +113,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .glass-panel-hover {
+  cursor: pointer;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .glass-panel-hover:hover {

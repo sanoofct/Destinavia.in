@@ -797,8 +797,21 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // Global triggers
-  window.filterBySector = (sector) => {
+  window.filterBySector = (sector, e) => {
+    if (e && typeof e.preventDefault === "function") {
+      e.preventDefault();
+    }
+    // Clear search and budget filters so the sector packages display cleanly without conflict
     activeCategoryFilter = sector;
+    activeSearchQuery = "";
+    activeBudgetFilter = "";
+
+    const searchInput = document.getElementById("search-dest");
+    if (searchInput) searchInput.value = "";
+    const budgetSelect = document.getElementById("budget-filter");
+    if (budgetSelect) budgetSelect.value = "";
+
+    // Update package category buttons UI in Packages section
     packageFilterButtons.forEach(btn => {
       if (btn.dataset.category === sector) {
         btn.className = "pkg-filter-btn px-5 py-2 rounded-full text-sm font-semibold bg-brand-blue text-white transition-all";
@@ -806,12 +819,35 @@ document.addEventListener("DOMContentLoaded", () => {
         btn.className = "pkg-filter-btn px-5 py-2 rounded-full text-sm font-semibold bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 hover:border-brand-blue transition-all";
       }
     });
+
     renderPackages(activeCategoryFilter, activeSearchQuery, activeBudgetFilter);
-    lenis.scrollTo("#packages", { offset: -80 });
+
+    if (lenis && typeof lenis.scrollTo === "function") {
+      lenis.scrollTo("#packages", { offset: -80 });
+    } else {
+      const pkgSection = document.getElementById("packages");
+      if (pkgSection) pkgSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  window.prefillInquiry = (sectorName) => {
+    const notesEl = document.getElementById("form-notes");
+    if (notesEl) {
+      notesEl.value = `Inquiry for ${sectorName}: Please provide customized itinerary, flight options, and group package details.`;
+      notesEl.focus();
+    }
+    if (lenis && typeof lenis.scrollTo === "function") {
+      lenis.scrollTo("#contact", { offset: -80 });
+    } else {
+      const contactSection = document.getElementById("contact");
+      if (contactSection) contactSection.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   window.filterByDestination = (destName) => {
     activeSearchQuery = destName;
+    activeBudgetFilter = "";
+    activeCategoryFilter = "all";
     document.getElementById("search-dest").value = destName;
     renderPackages("all", activeSearchQuery, activeBudgetFilter);
   };
@@ -1143,19 +1179,45 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
 
-    // Reveal panels on scroll
-    gsap.from(".glass-panel-hover", {
-      scrollTrigger: {
-        trigger: "#sectors",
-        start: "top 85%",
-      },
-      opacity: 0,
-      y: 40,
-      duration: 0.8,
-      stagger: 0.15,
-      ease: "power3.out"
-    });
+    // Reveal panels on scroll safely
+    if (typeof gsap !== "undefined" && typeof ScrollTrigger !== "undefined") {
+      gsap.fromTo(".glass-panel-hover", 
+        { opacity: 0, y: 30 },
+        {
+          scrollTrigger: {
+            trigger: "#sectors",
+            start: "top 90%",
+            once: true,
+          },
+          opacity: 1,
+          y: 0,
+          duration: 0.6,
+          stagger: 0.1,
+          ease: "power2.out",
+          clearProps: "all"
+        }
+      );
+      ScrollTrigger.refresh();
+    }
   };
+
+  // 14b. Smooth Scroll for all internal Anchor Links (Nav bar, Sectors, Contact)
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      const targetId = this.getAttribute('href');
+      if (targetId && targetId !== '#' && !this.getAttribute('onclick')) {
+        const targetEl = document.querySelector(targetId);
+        if (targetEl) {
+          e.preventDefault();
+          if (lenis && typeof lenis.scrollTo === 'function') {
+            lenis.scrollTo(targetEl, { offset: -80 });
+          } else {
+            targetEl.scrollIntoView({ behavior: 'smooth' });
+          }
+        }
+      }
+    });
+  });
 
   // 15. INITIALIZE ALL ENGINE RENDERS
   renderDestinations("all");
@@ -1168,6 +1230,17 @@ document.addEventListener("DOMContentLoaded", () => {
   updateCompareUI();
   bindSelectors();
 
-  // Run animations last after elements are painted
-  setTimeout(initGSAPAnimations, 100);
+  // Run animations last after elements are painted & refresh triggers
+  setTimeout(() => {
+    initGSAPAnimations();
+    if (typeof ScrollTrigger !== "undefined") {
+      ScrollTrigger.refresh();
+    }
+  }, 150);
+
+  window.addEventListener("load", () => {
+    if (typeof ScrollTrigger !== "undefined") {
+      ScrollTrigger.refresh();
+    }
+  });
 });
