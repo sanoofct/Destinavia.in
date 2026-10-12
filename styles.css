@@ -1,0 +1,326 @@
+/* DESTINAVIA - Custom Stylesheet */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+  --font-serif: 'Outfit', sans-serif;
+  --font-sans: 'Inter', sans-serif;
+  
+  /* Color system - Default Light Theme */
+  --bg-primary: #f8fafc;
+  --bg-secondary: #ffffff;
+  --bg-glass: rgba(255, 255, 255, 0.75);
+  --bg-glass-border: rgba(15, 23, 42, 0.08);
+  
+  --text-primary: #0F172A;
+  --text-secondary: #475569;
+  --text-muted: #94a3b8;
+  
+  --accent-green: #7ED957;
+  --accent-green-dark: #60B739;
+  --accent-gold: #D97706;
+  
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 8px 24px rgba(15, 23, 42, 0.06);
+  --shadow-lg: 0 16px 40px rgba(15, 23, 42, 0.1);
+  --glass-blur: 16px;
+}
+
+/* Dark Theme Tokens */
+.dark {
+  --bg-primary: #050811;
+  --bg-secondary: #0A0F1D;
+  --bg-glass: rgba(10, 15, 29, 0.75);
+  --bg-glass-border: rgba(126, 217, 87, 0.12);
+  
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-muted: #64748b;
+  
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.6);
+}
+
+/* Global Reset & Base Rules */
+html {
+  scroll-behavior: auto; /* Handled by Lenis for smooth inertia scrolling */
+  font-family: var(--font-sans);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1), color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  letter-spacing: -0.02em;
+}
+
+/* Scrollbar Customization */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--text-muted);
+  border-radius: 5px;
+  border: 2px solid var(--bg-primary);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-green);
+}
+
+/* Premium Typography & Gradients */
+.text-gradient {
+  background: linear-gradient(135deg, var(--text-primary) 30%, var(--accent-green-dark) 75%, var(--accent-green) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-gold {
+  background: linear-gradient(135deg, #FCD34D 0%, #D97706 50%, #B45309 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.bg-gradient-premium {
+  background: linear-gradient(135deg, var(--accent-green-dark) 0%, var(--accent-green) 100%);
+}
+
+.bg-gradient-dark-radial {
+  background: radial-gradient(circle at top, rgba(126, 217, 87, 0.15), transparent 60%);
+}
+
+/* Advanced Glassmorphism */
+.glass-panel {
+  background: var(--bg-glass);
+  backdrop-filter: blur(var(--glass-blur)) saturate(180%);
+  -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(180%);
+  border: 1px solid var(--bg-glass-border);
+  box-shadow: var(--shadow-md);
+}
+
+.glass-panel-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.glass-panel-hover:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(126, 217, 87, 0.3);
+  box-shadow: 0 12px 30px rgba(126, 217, 87, 0.15);
+  transform: translateY(-4px);
+}
+
+/* Apple & Stripe Style Buttons */
+.btn-premium-primary {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-premium-primary::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 300px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.5s ease;
+}
+.btn-premium-primary:hover::after {
+  transform: translate(-50%, -50%) scale(1);
+}
+.btn-premium-primary:active {
+  transform: scale(0.95);
+}
+
+/* Ambient glow blobs */
+.glow-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.15;
+  mix-blend-mode: plus-lighter;
+}
+
+.dark .glow-blob {
+  opacity: 0.3;
+}
+
+/* Lenis scroll styles */
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+/* Custom Parallax & Masonry Styles */
+.masonry-item {
+  break-inside: avoid;
+  margin-bottom: 1.5rem;
+}
+
+/* Custom Accordion Triggers */
+.faq-trigger[aria-expanded="true"] .faq-icon {
+  transform: rotate(180deg);
+}
+
+/* Swiper Slider Styling Overrides */
+.swiper-pagination-bullet {
+  background: var(--text-muted) !important;
+  opacity: 0.5 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--accent-green) !important;
+  width: 24px !important;
+  border-radius: 4px !important;
+  opacity: 1 !important;
+  transition: all 0.3s ease;
+}
+
+/* Card image overlay gradient */
+.card-img-gradient::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60%;
+  background: linear-gradient(to top, rgba(15, 23, 42, 0.9) 0%, rgba(15, 23, 42, 0) 100%);
+  pointer-events: none;
+}
+
+/* Weather Widget Floating */
+.weather-card {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Lottie Player container sizing */
+.lottie-container {
+  max-width: 100%;
+}
+
+/* Custom grid for Pinterest layout */
+@media (min-width: 768px) {
+  .pinterest-grid {
+    column-count: 2;
+    column-gap: 1.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  .pinterest-grid {
+    column-count: 3;
+    column-gap: 1.5rem;
+  }
+}
+
+/* Custom pulse animations for visitor counters */
+@keyframes glow-pulse {
+  0%, 100% {
+    box-shadow: 0 0 4px rgba(126, 217, 87, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 16px rgba(126, 217, 87, 0.8);
+  }
+}
+.live-glow {
+  animation: glow-pulse 2s infinite ease-in-out;
+}
+
+/* Hide scrollbars for tray elements */
+.scrollbar-none::-webkit-scrollbar {
+  display: none !important;
+}
+.scrollbar-none {
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
+}
+
+/* Hero Carousel Crossfade - 7 Slides (Total 42s, 6s per slide) */
+.hero-slide-1 { animation: hero-slide-1 42s infinite; }
+.hero-slide-2 { animation: hero-slide-2 42s infinite; }
+.hero-slide-3 { animation: hero-slide-3 42s infinite; }
+.hero-slide-4 { animation: hero-slide-4 42s infinite; }
+.hero-slide-5 { animation: hero-slide-5 42s infinite; }
+.hero-slide-6 { animation: hero-slide-6 42s infinite; }
+.hero-slide-7 { animation: hero-slide-7 42s infinite; }
+
+@keyframes hero-slide-1 {
+  0% { opacity: 1; transform: scale(1.05); }
+  14.28% { opacity: 1; }
+  17.14% { opacity: 0; }
+  97.14% { opacity: 0; transform: scale(1); }
+  100% { opacity: 1; transform: scale(1.05); }
+}
+@keyframes hero-slide-2 {
+  0% { opacity: 0; transform: scale(1); }
+  14.28% { opacity: 0; }
+  17.14% { opacity: 1; transform: scale(1.05); }
+  28.57% { opacity: 1; }
+  31.42% { opacity: 0; }
+  100% { opacity: 0; transform: scale(1); }
+}
+@keyframes hero-slide-3 {
+  0% { opacity: 0; transform: scale(1); }
+  28.57% { opacity: 0; }
+  31.42% { opacity: 1; transform: scale(1.05); }
+  42.85% { opacity: 1; }
+  45.71% { opacity: 0; }
+  100% { opacity: 0; transform: scale(1); }
+}
+@keyframes hero-slide-4 {
+  0% { opacity: 0; transform: scale(1); }
+  42.85% { opacity: 0; }
+  45.71% { opacity: 1; transform: scale(1.05); }
+  57.14% { opacity: 1; }
+  60.00% { opacity: 0; }
+  100% { opacity: 0; transform: scale(1); }
+}
+@keyframes hero-slide-5 {
+  0% { opacity: 0; transform: scale(1); }
+  57.14% { opacity: 0; }
+  60.00% { opacity: 1; transform: scale(1.05); }
+  71.42% { opacity: 1; }
+  74.28% { opacity: 0; }
+  100% { opacity: 0; transform: scale(1); }
+}
+@keyframes hero-slide-6 {
+  0% { opacity: 0; transform: scale(1); }
+  71.42% { opacity: 0; }
+  74.28% { opacity: 1; transform: scale(1.05); }
+  85.71% { opacity: 1; }
+  88.57% { opacity: 0; }
+  100% { opacity: 0; transform: scale(1); }
+}
+@keyframes hero-slide-7 {
+  0% { opacity: 0; transform: scale(1); }
+  85.71% { opacity: 0; }
+  88.57% { opacity: 1; transform: scale(1.05); }
+  97.14% { opacity: 1; }
+  100% { opacity: 0; transform: scale(1); }
+}

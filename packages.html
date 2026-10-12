@@ -1,0 +1,1786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary SEO Meta Tags -->
+  <title>Destinavia - Where Every Journey Becomes Extraordinary | Premium Travel Technology</title>
+  <meta name="description" content="Destinavia is a luxury travel technology company. Explore customized Honeymoon packages, Corporate retreats, Industrial visits, and International tours with AI-powered itinerary planners.">
+  <meta name="keywords" content="Destinavia, luxury travel, honeymoon packages, industrial visits, corporate tours, premium travel agency, custom holiday packages">
+  <meta name="author" content="Destinavia IT Operations">
+  
+  <!-- OpenGraph Metadata (Facebook, LinkedIn) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Destinavia - Luxury Travel & AI-Powered Packages">
+  <meta property="og:description" content="Discover curated travel itineraries, premium corporate retreats, and bespoke student tours with Destinavia.">
+  <meta property="og:image" content="logo.jpg">
+  <meta property="og:url" content="https://www.destinavia.in">
+  
+  <!-- Twitter Card Metadata -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Destinavia Travel Technologies">
+  <meta name="twitter:description" content="Where every journey becomes extraordinary. Book premium holidays and industrial tours today.">
+  
+  <!-- Schema.org Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TravelAgency",
+      "name": "Destinavia",
+      "alternateName": "Destinavia Travel Technology",
+      "url": "https://www.destinavia.in",
+      "logo": "logo.jpg",
+      "sameAs": [
+        "https://www.facebook.com/destinavia",
+        "https://www.instagram.com/destinavia.in",
+        "https://www.linkedin.com/company/destinavia"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+91-8899070076",
+        "contactType": "customer service",
+        "areaServed": "IN",
+        "availableLanguage": ["en", "hi"]
+      },
+      "priceRange": "$$$"
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Are your packages fully customizable?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely! Every traveler is unique, and so are our itineraries. We can fully tailor your trip—from flight preferences and accommodation styles to daily activities and dining choices—to match your exact budget and travel goals."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does Destinavia support group bookings like industrial visits and college tours?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We offer end-to-end management for group trips, including custom itineraries, group-rate accommodations, bulk transport, industrial access permissions, and dedicated trip coordinators to keep everything running smoothly and safely on the ground."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is your refund and cancellation policy?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cancellation policies vary depending on your trip details and supplier rules (airlines, hotels, local vendors). We always strive to provide flexible cancellation terms and will clearly outline any non-refundable deposits before you confirm your booking."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you assist with international visas?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! Our team guides you through the entire visa application process, helping you prepare the correct documentation, schedule appointment slots, and submit your paperwork for a hassle-free approval process."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I book flights and hotels together as a package?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! Bundling your flights and hotels into a single package is the best way to save time and secure exclusive bundled rates. We can also add airport transfers and activities to complete your journey."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer 24/7 emergency support?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Whenever you are on a trip booked through Destinavia, you have access to a dedicated 24/7 support manager to assist with travel delays, emergency rebookings, or any urgent inquiries."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What payment methods do you accept?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We accept credit/debit cards, net banking, UPI, wire transfers, and popular digital wallets. For larger custom packages, we also offer structured payment plans upon request."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are flight tickets included in the package prices?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends on your preference! We offer both land-only packages and all-inclusive flight-plus-land packages. The exact breakdown will always be clearly listed before you confirm your booking."
+          }
+        }
+      ]
+    }
+  </script>
+
+  <!-- Library CDNs -->
+  <!-- Tailwind CSS -->
+  <script>
+    // Suppress cdn.tailwindcss.com development-only warning in console
+    (function() {
+      const originalWarn = console.warn;
+      console.warn = function(...args) {
+        if (typeof args[0] === 'string' && args[0].includes('cdn.tailwindcss.com should not be used in production')) {
+          return;
+        }
+        originalWarn.apply(console, args);
+      };
+    })();
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            serif: ['Outfit', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              navy: '#0C111D',
+              blue: '#60B739', // Dark Brand Green
+              cyan: '#7ED957', // Light Brand Green (Logo Matching)
+              gold: '#D97706',
+              darkbg: '#050811', // Deep Luxury Black
+              slate: '#0F172A'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Swiper.js CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-slate-50 dark:bg-brand-darkbg text-slate-900 dark:text-slate-100 transition-colors duration-300">
+
+  <!-- Live Canvas Background for Abstract Three.js style lights -->
+  <canvas id="ambient-canvas" class="fixed top-0 left-0 w-full h-full pointer-events-none z-0 opacity-40"></canvas>
+
+  <!-- 1. ANNOUNCEMENT BAR -->
+  <div id="announcement-bar" class="relative z-50 bg-gradient-to-r from-brand-navy via-brand-blue to-brand-cyan text-white text-xs font-semibold py-2 px-4 shadow-sm flex flex-col md:flex-row justify-between items-center gap-2">
+    <div class="flex items-center gap-2">
+      <span class="bg-red-500 text-[10px] uppercase font-bold px-1.5 py-0.5 rounded live-glow">Limited Offer</span>
+      <span id="announcement-text" class="transition-opacity duration-300">Book any honeymoon package and get free Visa processing worth ₹15,000!</span>
+    </div>
+    <div class="flex items-center gap-4">
+      <a href="tel:+918899070076" class="flex items-center gap-1 hover:text-cyan-200 transition-colors">
+        <i data-lucide="phone" class="w-3.5 h-3.5"></i> Call Now: +91 88990 70076
+      </a>
+      <a href="https://wa.me/918899070076" target="_blank" rel="noopener" class="flex items-center gap-1 hover:text-green-300 transition-colors">
+        <i data-lucide="message-square" class="w-3.5 h-3.5 text-green-400"></i> WhatsApp Support
+      </a>
+    </div>
+  </div>
+
+  <!-- 2. PREMIUM NAVIGATION -->
+  <header id="main-header" class="sticky top-0 z-40 w-full transition-all duration-300 glass-panel">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex justify-between items-center">
+      <!-- Logo Section -->
+      <a href="#" class="flex items-center gap-3">
+        <img src="logo.jpg" alt="Destinavia Logo" class="h-10 md:h-12 w-auto object-contain rounded-md" />
+      </a>
+
+      <!-- Desktop Nav Menu -->
+      <nav class="hidden lg:flex items-center gap-6 font-medium text-sm text-slate-700 dark:text-slate-200">
+        <a href="#destinations" class="hover:text-brand-blue transition-colors">Destinations</a>
+        <a href="#packages" class="hover:text-brand-blue transition-colors">Packages</a>
+        <a href="#sectors" class="hover:text-brand-blue transition-colors">Sectors</a>
+        <a href="#about" class="hover:text-brand-blue transition-colors">Why Us</a>
+        <a href="#gallery" class="hover:text-brand-blue transition-colors">Gallery</a>
+        <a href="#blogs" class="hover:text-brand-blue transition-colors">Guides</a>
+        <a href="#faq" class="hover:text-brand-blue transition-colors">FAQ</a>
+        <a href="#contact" class="hover:text-brand-blue transition-colors">Contact</a>
+      </nav>
+
+      <!-- Right Action Items -->
+      <div class="hidden lg:flex items-center gap-4">
+        <!-- Currency Selector -->
+        <div class="relative">
+          <select id="currency-selector" class="bg-transparent text-xs font-semibold py-1.5 px-2.5 rounded border border-slate-300 dark:border-slate-700 hover:border-brand-blue outline-none cursor-pointer">
+            <option value="INR" class="text-black">INR (₹)</option>
+            <option value="USD" class="text-black">USD ($)</option>
+            <option value="EUR" class="text-black">EUR (€)</option>
+          </select>
+        </div>
+
+        <!-- Language Selector -->
+        <div class="relative">
+          <select id="language-selector" class="bg-transparent text-xs font-semibold py-1.5 px-2.5 rounded border border-slate-300 dark:border-slate-700 hover:border-brand-blue outline-none cursor-pointer">
+            <option value="EN" class="text-black">English</option>
+            <option value="ES" class="text-black">Español</option>
+            <option value="HI" class="text-black">हिन्दी</option>
+          </select>
+        </div>
+
+        <!-- Dark Mode Button -->
+        <button id="theme-toggle" class="p-2 rounded-full hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors text-slate-600 dark:text-slate-300" aria-label="Toggle Dark Mode">
+          <i data-lucide="moon" class="w-5 h-5 block dark:hidden"></i>
+          <i data-lucide="sun" class="w-5 h-5 hidden dark:block text-brand-gold"></i>
+        </button>
+
+        <!-- Wishlist Button -->
+        <button id="wishlist-trigger" class="relative p-2 rounded-full hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors text-slate-600 dark:text-slate-300" aria-label="View Wishlist">
+          <i data-lucide="heart" class="w-5 h-5"></i>
+          <span id="wishlist-count" class="absolute -top-1 -right-1 bg-brand-blue text-white text-[10px] w-4.5 h-4.5 flex items-center justify-center rounded-full font-bold">0</span>
+        </button>
+
+        <!-- Compare Button -->
+        <button id="compare-trigger" class="relative p-2 rounded-full hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors text-slate-600 dark:text-slate-300" aria-label="Compare Packages">
+          <i data-lucide="git-compare" class="w-5 h-5"></i>
+          <span id="compare-count" class="absolute -top-1 -right-1 bg-brand-cyan text-slate-900 text-[10px] w-4.5 h-4.5 flex items-center justify-center rounded-full font-bold">0</span>
+        </button>
+
+        <!-- Book Now Button -->
+        <a href="#contact" class="btn-premium-primary bg-brand-blue text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-brand-blue/80 hover:shadow-lg transition-all">
+          Book Now
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <div class="flex lg:hidden items-center gap-3">
+        <button id="theme-toggle-mobile" class="p-2 rounded-full hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors" aria-label="Toggle Dark Mode">
+          <i data-lucide="moon" class="w-5 h-5 block dark:hidden"></i>
+          <i data-lucide="sun" class="w-5 h-5 hidden dark:block text-brand-gold"></i>
+        </button>
+        <button id="wishlist-trigger-mobile" class="relative p-2 rounded-full hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors" aria-label="View Wishlist">
+          <i data-lucide="heart" class="w-5 h-5"></i>
+          <span id="wishlist-count-mobile" class="absolute -top-1 -right-1 bg-brand-blue text-white text-[9px] w-4 h-4 flex items-center justify-center rounded-full font-bold">0</span>
+        </button>
+        <button id="mobile-menu-toggle" class="p-2 rounded-lg hover:bg-slate-200 dark:hover:bg-slate-800 transition-all" aria-label="Toggle navigation menu">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-nav" class="hidden lg:hidden w-full border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-brand-navy p-6 transition-all duration-300">
+      <nav class="flex flex-col gap-4 text-base font-semibold text-slate-800 dark:text-slate-100">
+        <a href="#destinations" class="mobile-nav-link hover:text-brand-blue">Destinations</a>
+        <a href="#packages" class="mobile-nav-link hover:text-brand-blue">Packages</a>
+        <a href="#sectors" class="mobile-nav-link hover:text-brand-blue">Specialty Sectors</a>
+        <a href="#about" class="mobile-nav-link hover:text-brand-blue">Why Us</a>
+        <a href="#gallery" class="mobile-nav-link hover:text-brand-blue">Photo Gallery</a>
+        <a href="#blogs" class="mobile-nav-link hover:text-brand-blue">Blogs & Guides</a>
+        <a href="#faq" class="mobile-nav-link hover:text-brand-blue">FAQ</a>
+        <a href="#contact" class="mobile-nav-link hover:text-brand-blue">Contact Us</a>
+        <div class="h-[1px] bg-slate-200 dark:bg-slate-800 my-2"></div>
+        <!-- Currency/Lang selectors inside mobile drawer -->
+        <div class="flex gap-4">
+          <div class="flex-1">
+            <label class="text-xs text-slate-400 font-bold uppercase block mb-1">Currency</label>
+            <select id="currency-selector-mobile" class="w-full bg-slate-100 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 py-2 px-3 rounded text-sm">
+              <option value="INR">INR (₹)</option>
+              <option value="USD">USD ($)</option>
+              <option value="EUR">EUR (€)</option>
+            </select>
+          </div>
+          <div class="flex-1">
+            <label class="text-xs text-slate-400 font-bold uppercase block mb-1">Language</label>
+            <select id="language-selector-mobile" class="w-full bg-slate-100 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 py-2 px-3 rounded text-sm">
+              <option value="EN">English</option>
+              <option value="ES">Español</option>
+              <option value="HI">हिन्दी</option>
+            </select>
+          </div>
+        </div>
+        <a href="#contact" class="mobile-nav-link bg-brand-blue text-white text-center py-3 rounded-full hover:bg-brand-blue/80 transition-colors">
+          Book Now
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN VIEWPORT -->
+  <main class="relative z-10">
+
+    <!-- 3. HERO SECTION -->
+    <section id="hero" class="relative min-h-[90vh] lg:min-h-screen flex items-center justify-center overflow-visible py-16 lg:py-24">
+      <!-- Ambient video/animated bg container -->
+      <div class="absolute inset-0 z-0 overflow-hidden bg-black">
+        <!-- 7 Attractive Photo Slides (Indian Destinations) -->
+        <img src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1920&q=80" alt="Taj Mahal" class="hero-slide-1 absolute inset-0 w-full h-full object-cover select-none">
+        <img src="https://images.unsplash.com/photo-1477587458883-47145ed94245?auto=format&fit=crop&w=1920&q=80" alt="Hawa Mahal" class="hero-slide-2 absolute inset-0 w-full h-full object-cover select-none opacity-0">
+        <img src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=1920&q=80" alt="Hadimba Temple Snow" class="hero-slide-3 absolute inset-0 w-full h-full object-cover select-none opacity-0">
+        <img src="https://images.unsplash.com/photo-1566228015668-4c45dbc4e2f5?auto=format&fit=crop&w=1920&q=80" alt="Shikara Dal Lake" class="hero-slide-4 absolute inset-0 w-full h-full object-cover select-none opacity-0">
+        <img src="https://images.unsplash.com/photo-1593693397690-362cb9666fc2?auto=format&fit=crop&w=1920&q=80" alt="Munnar Hills" class="hero-slide-5 absolute inset-0 w-full h-full object-cover select-none opacity-0">
+        <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1920&q=80" alt="Goa Beaches" class="hero-slide-6 absolute inset-0 w-full h-full object-cover select-none opacity-0">
+        <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1920&q=80" alt="Dawki River Meghalaya" class="hero-slide-7 absolute inset-0 w-full h-full object-cover select-none opacity-0">
+        
+        <!-- Subtle Top Gradient for Navigation Readability -->
+        <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-transparent z-15"></div>
+      </div>
+
+      <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white flex flex-col items-center">
+        <!-- Floating badge with shimmer -->
+        <div class="gsap-hero-fade mb-6 inline-flex items-center gap-2 bg-white/20 backdrop-blur-md border border-white/40 px-4 py-1.5 rounded-full text-xs font-bold tracking-wide uppercase shadow-lg select-none">
+          <i data-lucide="sparkles" class="w-4 h-4 text-brand-cyan animate-pulse"></i>
+          Next-Generation Travel Technology
+        </div>
+
+        <!-- Big Hero Heading -->
+        <h1 class="gsap-hero-title text-4xl sm:text-6xl md:text-8xl font-black tracking-tight leading-none mb-6 drop-shadow-2xl text-white shadow-black/50">
+          Explore The World <br>
+          <span class="bg-gradient-to-r from-white via-[#7ED957] to-[#8AE85C] bg-clip-text text-transparent drop-shadow-xl">With Destinavia</span>
+        </h1>
+
+        <!-- Subheading -->
+        <p class="gsap-hero-subtitle text-lg sm:text-2xl text-white drop-shadow-lg max-w-3xl mb-12 font-semibold">
+          Where Every Journey Becomes Extraordinary. Tailored Honeymoons, Corporate Summits, and Specialized Student Tours.
+        </p>
+
+        <!-- SEARCH PILL (EASEMYTRIP STYLE) -->
+        <div class="gsap-hero-search w-full max-w-3xl bg-white dark:bg-slate-900 p-2.5 pl-6 rounded-full flex items-center gap-2 shadow-2xl border border-slate-200 dark:border-slate-800">
+          <i data-lucide="search" class="w-6 h-6 text-slate-400 shrink-0"></i>
+          <input type="text" id="search-dest" placeholder="Enter Your Dream Destination!" class="flex-1 bg-transparent text-slate-800 dark:text-white placeholder-slate-400 focus:outline-none text-base font-semibold py-3 px-2">
+          <button id="search-submit-btn" class="bg-gradient-to-r from-brand-blue to-brand-cyan hover:shadow-lg hover:shadow-brand-cyan/20 text-white font-extrabold px-8 py-4 rounded-full transition-all text-base shrink-0 select-none">
+            Search
+          </button>
+        </div>
+
+        <!-- Trust Badges -->
+        <div class="gsap-hero-badges mt-10 mb-14 flex flex-wrap justify-center items-center gap-6 text-sm text-slate-300 font-medium select-none">
+          <div class="flex items-center gap-2 bg-white/5 border border-white/10 px-4 py-2 rounded-full">
+            <i data-lucide="shield-check" class="w-5 h-5 text-green-400"></i>
+            100% Secure Payments
+          </div>
+          <div class="flex items-center gap-2 bg-white/5 border border-white/10 px-4 py-2 rounded-full">
+            <i data-lucide="award" class="w-5 h-5 text-yellow-400"></i>
+            Curated Travel Experiences
+          </div>
+          <div class="flex items-center gap-2 bg-white/5 border border-white/10 px-4 py-2 rounded-full">
+            <i data-lucide="check-square" class="w-5 h-5 text-brand-cyan"></i>
+            GST Compliant Invoicing
+          </div>
+        </div>
+      </div>
+
+      <!-- FLOATING CATEGORIES TRAY (EASEMYTRIP STYLE) -->
+      <div class="absolute bottom-0 translate-y-1/2 left-1/2 -translate-x-1/2 z-30 w-full max-w-4xl px-4">
+        <div class="glass-panel py-3.5 px-6 rounded-3xl md:rounded-full flex items-center justify-between gap-6 shadow-2xl overflow-x-auto whitespace-nowrap scrollbar-none border border-slate-200 dark:border-slate-800/80 bg-white/95 dark:bg-slate-900/95">
+          
+          <!-- Easy Book -->
+          <button class="hero-cat-chip group flex items-center gap-3 py-1.5 px-3.5 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800/60 transition-all select-none" onclick="filterBySector('all')">
+            <div class="relative shrink-0">
+              <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=80&h=80&q=80" alt="Easy Book" class="w-10 h-10 rounded-full object-cover border-2 border-brand-cyan">
+              <span class="absolute -top-2 -right-1 bg-pink-500 text-white text-[8px] font-extrabold uppercase px-1 py-0.5 rounded-sm tracking-wider scale-90">NEW</span>
+            </div>
+            <span class="text-xs md:text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:text-brand-blue transition-colors">Fixed Departures</span>
+          </button>
+
+          <!-- Honeymoon -->
+          <button class="hero-cat-chip group flex items-center gap-3 py-1.5 px-3.5 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800/60 transition-all select-none" onclick="filterBySector('Honeymoon')">
+            <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=80&h=80&q=80" alt="Honeymoon" class="w-10 h-10 rounded-full object-cover border-2 border-pink-400">
+            <span class="text-xs md:text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:text-brand-blue transition-colors">Honeymoon</span>
+          </button>
+
+          <!-- Pilgrimage -->
+          <button class="hero-cat-chip group flex items-center gap-3 py-1.5 px-3.5 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800/60 transition-all select-none" onclick="filterBySector('Family')">
+            <img src="https://images.unsplash.com/photo-1593693397690-362cb9666fc2?auto=format&fit=crop&w=80&h=80&q=80" alt="Pilgrimage" class="w-10 h-10 rounded-full object-cover border-2 border-brand-blue">
+            <span class="text-xs md:text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:text-brand-blue transition-colors">Pilgrimage</span>
+          </button>
+
+          <!-- Luxury -->
+          <button class="hero-cat-chip group flex items-center gap-3 py-1.5 px-3.5 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800/60 transition-all select-none" onclick="filterBySector('Corporate')">
+            <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=80&h=80&q=80" alt="Luxury" class="w-10 h-10 rounded-full object-cover border-2 border-brand-gold">
+            <span class="text-xs md:text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:text-brand-blue transition-colors">Luxury</span>
+          </button>
+
+          <!-- Adventure -->
+          <button class="hero-cat-chip group flex items-center gap-3 py-1.5 px-3.5 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800/60 transition-all select-none" onclick="filterBySector('Adventure')">
+            <img src="https://images.unsplash.com/photo-1527631746610-bca00a040d60?auto=format&fit=crop&w=80&h=80&q=80" alt="Adventure" class="w-10 h-10 rounded-full object-cover border-2 border-emerald-400">
+            <span class="text-xs md:text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:text-brand-blue transition-colors">Adventure</span>
+          </button>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. FEATURED DESTINATIONS -->
+    <section id="destinations" class="py-24 bg-white dark:bg-brand-navy relative overflow-hidden transition-all">
+      <div class="glow-blob bg-[#7ED957]/10 w-[400px] h-[400px] -top-20 -left-20"></div>
+      
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-4">
+          <div class="text-left">
+            <span class="text-brand-blue dark:text-brand-cyan text-sm uppercase font-bold tracking-wider block mb-2">Curated Escapes</span>
+            <h2 class="text-3xl md:text-5xl font-extrabold text-gradient">Explore Popular Destinations</h2>
+          </div>
+          <!-- Category Tabs (Domestic vs International) -->
+          <div class="flex bg-slate-100 dark:bg-slate-800 p-1.5 rounded-full border border-slate-200 dark:border-slate-700 self-start md:self-auto shrink-0 select-none">
+            <button id="dest-tab-all" class="dest-tab-btn px-6 py-2 rounded-full text-sm font-semibold transition-all bg-brand-blue text-white">All</button>
+            <button id="dest-tab-domestic" class="dest-tab-btn px-6 py-2 rounded-full text-sm font-semibold transition-all text-slate-600 dark:text-slate-300">Domestic (India)</button>
+            <button id="dest-tab-international" class="dest-tab-btn px-6 py-2 rounded-full text-sm font-semibold transition-all text-slate-600 dark:text-slate-300">International</button>
+          </div>
+        </div>
+
+        <!-- Destinations Grid -->
+        <div id="destinations-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+          <!-- Dynamically generated destinations load here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. TOP TOUR PACKAGES -->
+    <section id="packages" class="py-24 bg-slate-50 dark:bg-brand-darkbg relative overflow-hidden transition-all">
+      <div class="glow-blob bg-[#7ED957]/10 w-[500px] h-[500px] -bottom-20 -right-20"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="text-brand-blue dark:text-brand-cyan text-sm uppercase font-bold tracking-wider block mb-2">Signature Collections</span>
+          <h2 class="text-3xl md:text-5xl font-extrabold text-gradient mb-4">Trending Tour Packages</h2>
+          <p class="text-slate-600 dark:text-slate-300">Explore handpicked packages engineered for luxury, educational impact, or corporate synergy.</p>
+        </div>
+
+        <!-- Package category filters -->
+        <div class="flex flex-wrap justify-center gap-2 mb-12 select-none" id="package-category-filters">
+          <button class="pkg-filter-btn px-5 py-2 rounded-full text-sm font-semibold bg-brand-blue text-white transition-all" data-category="all">All Packages</button>
+          <button class="pkg-filter-btn px-5 py-2 rounded-full text-sm font-semibold bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 hover:border-brand-blue transition-all" data-category="Honeymoon">Honeymoon</button>
+          <button class="pkg-filter-btn px-5 py-2 rounded-full text-sm font-semibold bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 hover:border-brand-blue transition-all" data-category="Industrial Visits">Industrial Visits</button>
+          <button class="pkg-filter-btn px-5 py-2 rounded-full text-sm font-semibold bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 hover:border-brand-blue transition-all" data-category="Corporate">Corporate Retreats</button>
+          <button class="pkg-filter-btn px-5 py-2 rounded-full text-sm font-semibold bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 hover:border-brand-blue transition-all" data-category="Family">Family Trips</button>
+          <button class="pkg-filter-btn px-5 py-2 rounded-full text-sm font-semibold bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 hover:border-brand-blue transition-all" data-category="Adventure">Adventure</button>
+        </div>
+
+        <!-- Packages List Grid -->
+        <div id="packages-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+          <!-- Dynamic Packages load here -->
+        </div>
+
+        <div id="no-packages-message" class="hidden text-center py-16 text-slate-400">
+          <i data-lucide="frown" class="w-12 h-12 mx-auto mb-4 text-slate-500"></i>
+          <p class="text-lg">No matching packages found. Modify your filters or try our AI Finder below.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. AI PACKAGE FINDER -->
+    <section id="ai-finder" class="py-24 bg-gradient-to-b from-brand-navy to-slate-900 text-white relative overflow-hidden">
+      <div class="absolute inset-0 opacity-10 bg-[linear-gradient(to_right,#080f26_1px,transparent_1px),linear-gradient(to_bottom,#080f26_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
+      
+      <!-- Ambient light bubble -->
+      <div class="absolute w-[500px] h-[500px] rounded-full bg-brand-cyan/15 blur-[120px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
+
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+        <!-- AI Icon -->
+        <div class="inline-flex p-3 rounded-2xl bg-gradient-to-tr from-brand-blue to-brand-cyan mb-6 shadow-lg shadow-brand-blue/20">
+          <i data-lucide="bot" class="w-8 h-8 text-white animate-pulse"></i>
+        </div>
+
+        <h2 class="text-3xl md:text-5xl font-black mb-4 font-serif tracking-tight">Desti Guide AI Tour Finder</h2>
+        <p class="text-slate-300 max-w-2xl mx-auto mb-10">
+          State your requirements in plain English, and our conversational neural travel system will select the absolute match from our global databases instantly.
+        </p>
+
+        <!-- Dynamic Finder Terminal -->
+        <div class="bg-slate-900/80 border border-slate-700/50 p-6 rounded-3xl shadow-2xl text-left max-w-2xl mx-auto backdrop-blur-md">
+          <div class="flex items-center justify-between mb-4 border-b border-slate-800 pb-3 text-xs text-slate-400 font-semibold select-none">
+            <span class="flex items-center gap-1.5">
+              <span class="w-2.5 h-2.5 bg-green-500 rounded-full animate-ping"></span>
+              Desti Guide by Destinavia v4.2
+            </span>
+            <span>PCI-DSS Compliant</span>
+          </div>
+
+          <!-- Prompt chips suggestions -->
+          <div class="mb-4">
+            <p class="text-xs text-slate-400 mb-2 font-bold uppercase select-none">Try clicking a sample prompt:</p>
+            <div class="flex flex-wrap gap-2">
+              <button class="ai-prompt-chip bg-slate-800 hover:bg-brand-blue border border-slate-700 text-xs py-1.5 px-3 rounded-lg text-slate-200 hover:text-white transition-all text-left">
+                "I want a honeymoon package under ₹70,000"
+              </button>
+              <button class="ai-prompt-chip bg-slate-800 hover:bg-brand-blue border border-slate-700 text-xs py-1.5 px-3 rounded-lg text-slate-200 hover:text-white transition-all text-left">
+                "I need an industrial visit for 120 students"
+              </button>
+              <button class="ai-prompt-chip bg-slate-800 hover:bg-brand-blue border border-slate-700 text-xs py-1.5 px-3 rounded-lg text-slate-200 hover:text-white transition-all text-left">
+                "Show me 6 days adventure packages"
+              </button>
+            </div>
+          </div>
+
+          <!-- Chat Input Area -->
+          <form id="ai-finder-form" class="flex gap-2">
+            <input type="text" id="ai-input" placeholder="Type your travel dreams... (e.g. Honeymoon Trip under ₹2,00,000)" class="flex-1 bg-slate-950 border border-slate-800 focus:border-brand-cyan outline-none text-white text-sm py-3 px-4 rounded-xl placeholder-slate-500 transition-colors" required>
+            <button type="submit" class="bg-gradient-to-r from-brand-blue to-brand-cyan hover:shadow-lg hover:shadow-brand-cyan/20 text-slate-900 font-bold px-6 py-3 rounded-xl flex items-center gap-2 transition-all">
+              <span class="hidden sm:inline font-bold">Ask Desti Guide</span>
+              <i data-lucide="send" class="w-4 h-4"></i>
+            </button>
+          </form>
+
+          <!-- Chat outputs -->
+          <div id="ai-output-container" class="hidden mt-6 border-t border-slate-800 pt-6">
+            <div class="flex gap-3 mb-4">
+              <div class="w-8 h-8 rounded-full bg-brand-cyan flex items-center justify-center shrink-0">
+                <i data-lucide="bot" class="w-4.5 h-4.5 text-slate-950"></i>
+              </div>
+              <div class="flex-1 bg-slate-950/60 p-4 rounded-2xl text-sm border border-slate-800">
+                <p id="ai-response-text" class="text-slate-300 font-medium"></p>
+              </div>
+            </div>
+
+            <!-- Dynamic result package recommendation layout -->
+            <div id="ai-response-results" class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
+              <!-- Instantly loaded search hits -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. SPECIAL SECTORS (Categories Grid) -->
+    <section id="sectors" class="py-24 bg-white dark:bg-brand-navy relative transition-all">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="text-brand-blue dark:text-brand-cyan text-sm uppercase font-bold tracking-wider block mb-2">Bespoke Divisions</span>
+          <h2 class="text-3xl md:text-5xl font-extrabold text-gradient mb-4">Specialty Travel Sectors</h2>
+          <p class="text-slate-600 dark:text-slate-300">Custom tailored travel programs managed by industry specific hospitality experts.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Honeymoon -->
+          <div class="glass-panel glass-panel-hover p-8 rounded-3xl text-left relative overflow-hidden flex flex-col justify-between min-h-[300px]">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-pink-500/10 flex items-center justify-center mb-6 text-pink-600 dark:text-pink-400">
+                <i data-lucide="heart" class="w-6 h-6"></i>
+              </div>
+              <h3 class="text-2xl font-bold mb-3">Honeymoon & Romance</h3>
+              <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">Luxury candlelit beach dinners, floating breakfasts in private pool villas, and couples spa retreats in secluded valleys.</p>
+            </div>
+            <a href="#packages" onclick="filterBySector('Honeymoon')" class="text-brand-blue dark:text-brand-cyan font-bold text-sm inline-flex items-center gap-1 hover:underline mt-6">
+              View Packages <i data-lucide="chevron-right" class="w-4 h-4"></i>
+            </a>
+          </div>
+
+          <!-- Corporate Tours -->
+          <div class="glass-panel glass-panel-hover p-8 rounded-3xl text-left relative overflow-hidden flex flex-col justify-between min-h-[300px]">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-brand-blue/10 flex items-center justify-center mb-6 text-brand-blue dark:text-brand-cyan">
+                <i data-lucide="briefcase" class="w-6 h-6"></i>
+              </div>
+              <h3 class="text-2xl font-bold mb-3">Corporate Retreats & MICE</h3>
+              <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">Conferences, team-building retreats, sunset yacht meetings, gala dinners, and completely hassle-free GST billing compliance.</p>
+            </div>
+            <a href="#packages" onclick="filterBySector('Corporate')" class="text-brand-blue dark:text-brand-cyan font-bold text-sm inline-flex items-center gap-1 hover:underline mt-6">
+              View Retreats <i data-lucide="chevron-right" class="w-4 h-4"></i>
+            </a>
+          </div>
+
+          <!-- Industrial Visits -->
+          <div class="glass-panel glass-panel-hover p-8 rounded-3xl text-left relative overflow-hidden flex flex-col justify-between min-h-[300px]">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-brand-cyan/10 flex items-center justify-center mb-6 text-brand-cyan dark:text-brand-cyan">
+                <i data-lucide="factory" class="w-6 h-6"></i>
+              </div>
+              <h3 class="text-2xl font-bold mb-3">Industrial Visits & Colleges</h3>
+              <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">Permissions at top manufacturing sites, quad-sharing student accommodations, sleeper bus fleets, and safety certified guides.</p>
+            </div>
+            <a href="#packages" onclick="filterBySector('Industrial Visits')" class="text-brand-blue dark:text-brand-cyan font-bold text-sm inline-flex items-center gap-1 hover:underline mt-6">
+              View Student Tours <i data-lucide="chevron-right" class="w-4 h-4"></i>
+            </a>
+          </div>
+
+          <!-- Adventure -->
+          <div class="glass-panel glass-panel-hover p-8 rounded-3xl text-left relative overflow-hidden flex flex-col justify-between min-h-[300px]">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-emerald-500/10 flex items-center justify-center mb-6 text-emerald-600 dark:text-emerald-400">
+                <i data-lucide="compass" class="w-6 h-6"></i>
+              </div>
+              <h3 class="text-2xl font-bold mb-3">Adventure Expeditions</h3>
+              <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">Trekking high mountain passes in Ladakh, scuba diving in pristine reefs, and extreme sports packages under expert safety oversight.</p>
+            </div>
+            <a href="#packages" onclick="filterBySector('Adventure')" class="text-brand-blue dark:text-brand-cyan font-bold text-sm inline-flex items-center gap-1 hover:underline mt-6">
+              View Expeditions <i data-lucide="chevron-right" class="w-4 h-4"></i>
+            </a>
+          </div>
+
+          <!-- Family Vacations -->
+          <div class="glass-panel glass-panel-hover p-8 rounded-3xl text-left relative overflow-hidden flex flex-col justify-between min-h-[300px]">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-amber-500/10 flex items-center justify-center mb-6 text-amber-600 dark:text-amber-400">
+                <i data-lucide="users" class="w-6 h-6"></i>
+              </div>
+              <h3 class="text-2xl font-bold mb-3">Family & Leisure Holidays</h3>
+              <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">Meticulously paced multigenerational tours featuring kid-friendly activities, luxury resorts, and spacious private transfers.</p>
+            </div>
+            <a href="#packages" onclick="filterBySector('Family')" class="text-brand-blue dark:text-brand-cyan font-bold text-sm inline-flex items-center gap-1 hover:underline mt-6">
+              View Family Packages <i data-lucide="chevron-right" class="w-4 h-4"></i>
+            </a>
+          </div>
+
+          <!-- Pilgrimage & Culture -->
+          <div class="glass-panel glass-panel-hover p-8 rounded-3xl text-left relative overflow-hidden flex flex-col justify-between min-h-[300px]">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-indigo-500/10 flex items-center justify-center mb-6 text-indigo-600 dark:text-indigo-400">
+                <i data-lucide="sun" class="w-6 h-6"></i>
+              </div>
+              <h3 class="text-2xl font-bold mb-3">Pilgrimage & Sacred Heritage</h3>
+              <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">Spiritual trails, VIP temple entry clearances, comfortable stays, and guided historical walkthroughs across holy cities.</p>
+            </div>
+            <a href="#contact" class="text-brand-blue dark:text-brand-cyan font-bold text-sm inline-flex items-center gap-1 hover:underline mt-6">
+              Request Custom Itinerary <i data-lucide="chevron-right" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. WHY DESTINAVIA (Statistics & Trust) -->
+    <section id="about" class="py-24 bg-slate-50 dark:bg-brand-darkbg relative overflow-hidden transition-all">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          
+          <!-- Text and Trust indicators -->
+          <div class="text-left">
+            <span class="text-brand-blue dark:text-brand-cyan text-sm uppercase font-bold tracking-wider block mb-2">Luxury Standards</span>
+            <h2 class="text-3xl md:text-5xl font-extrabold text-gradient mb-6">Designed For Travelers Who Expect Perfection</h2>
+            <p class="text-slate-600 dark:text-slate-300 mb-8 leading-relaxed">
+              At Destinavia, we merge premium hospitality with cutting-edge travel technology. Every itinerary is algorithmically checked for optimal transit times and validated by certified destination specialists.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div class="flex items-start gap-4">
+                <div class="p-2 rounded-lg bg-green-500/10 text-green-500 mt-1">
+                  <i data-lucide="check" class="w-5 h-5 font-bold"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-base">Exceptional Travel Experiences</h4>
+                  <p class="text-xs text-slate-400 mt-1">Curated premium and luxury journeys with carefully selected stays, transportation, and experiences.</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-4">
+                <div class="p-2 rounded-lg bg-brand-blue/10 text-brand-blue mt-1">
+                  <i data-lucide="shield" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-base">Secure Payment Guarantee</h4>
+                  <p class="text-xs text-slate-400 mt-1">Secure payment processing with Instant Refunds and credit facilities.</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-4">
+                <div class="p-2 rounded-lg bg-brand-cyan/10 text-brand-cyan mt-1">
+                  <i data-lucide="phone-call" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-base">24/7 Global Concierge</h4>
+                  <p class="text-xs text-slate-400 mt-1">Dedicated support reps on standby for live updates and emergency rebookings.</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-4">
+                <div class="p-2 rounded-lg bg-amber-500/10 text-brand-gold mt-1">
+                  <i data-lucide="star" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-base">GST Invoicing for Companies</h4>
+                  <p class="text-xs text-slate-400 mt-1">Save up to 18% in tax claims with immediate automated corporate invoicing.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Animated Statistics Block -->
+          <div class="grid grid-cols-2 gap-6">
+            <div class="glass-panel p-8 rounded-3xl text-center flex flex-col justify-center items-center shadow-lg">
+              <span class="text-4xl md:text-6xl font-black text-brand-blue tracking-tight block mb-2" id="stat-travelers" data-target="10000">10000+</span>
+              <span class="text-sm font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider">Happy Traveller</span>
+            </div>
+            <div class="glass-panel p-8 rounded-3xl text-center flex flex-col justify-center items-center shadow-lg">
+              <span class="text-4xl md:text-6xl font-black text-brand-cyan tracking-tight block mb-2" id="stat-destinations" data-target="100">100+</span>
+              <span class="text-sm font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider">Destinations</span>
+            </div>
+            <div class="glass-panel p-8 rounded-3xl text-center flex flex-col justify-center items-center shadow-lg col-span-2">
+              <div class="flex items-center gap-1.5 justify-center mb-1">
+                <span class="text-4xl md:text-6xl font-black text-brand-gold tracking-tight" id="stat-rating">4.9</span>
+                <div class="flex text-brand-gold">
+                  <i data-lucide="star" class="w-8 h-8 fill-brand-gold text-brand-gold"></i>
+                </div>
+              </div>
+              <span class="text-sm font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider">Google Review Average Rating</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. CUSTOMER REVIEWS (Testimonial Slider) -->
+    <section class="py-24 bg-white dark:bg-brand-navy relative overflow-hidden transition-all">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="text-brand-blue dark:text-brand-cyan text-sm uppercase font-bold tracking-wider block mb-2">Client Testimonials</span>
+          <h2 class="text-3xl md:text-5xl font-extrabold text-gradient mb-4">Reviews From Premium Travelers</h2>
+          <p class="text-slate-600 dark:text-slate-300">Hear directly from honeymoon couples, college deans, and corporate event planners.</p>
+        </div>
+
+        <!-- Swiper Container -->
+        <div class="swiper testimonials-swiper pb-16">
+          <div class="swiper-wrapper" id="testimonials-container">
+            <!-- 1. Anirudh Sharma -->
+            <div class="swiper-slide">
+              <div class="glass-panel p-8 rounded-3xl h-full flex flex-col justify-between text-left relative overflow-hidden bg-white dark:bg-brand-navy border border-slate-200/50 dark:border-slate-800/50 shadow">
+                <div>
+                  <div class="flex items-center gap-1 text-brand-gold mb-4">
+                    <i data-lucide="star" class="w-4 h-4 fill-brand-gold text-brand-gold"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-brand-gold text-brand-gold"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-brand-gold text-brand-gold"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-brand-gold text-brand-gold"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-brand-gold text-brand-gold"></i>
+                  </div>
+                  <p class="text-sm italic text-slate-600 dark:text-slate-300 leading-relaxed mb-6">"Organized an industrial visit for 120 mechanical engineering students to Bangalore. Destinavia managed the factory approvals, luxury buses, and accommodation flawlessly. A gold standard in student travel management."</p>
+                </div>
+                <div class="flex items-center justify-between border-t border-slate-100 dark:border-slate-800 pt-4">
+                  <div class="flex items-center gap-3">
+                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=120&q=80" alt="Dr. Anirudh Sharma" class="w-10 h-10 rounded-full object-cover">
+                    <div>
+                      <h4 class="font-bold text-sm text-slate-800 dark:text-slate-100">Dr. Anirudh Sharma</h4>
+                      <p class="text-[10px] text-slate-400 font-semibold uppercase">Dean of Engineering, SRM University</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="glass-panel p-8 rounded-3xl h-full flex flex-col justify-between text-left relative overflow-hidden bg-white dark:bg-brand-navy border border-slate-200/50 dark:border-slate-800/50 shadow">
+                <div>
+                  <div class="flex items-center gap-1 text-brand-gold mb-4">
+                    <i data-lucide="star" class="w-4 h-4 fill-brand-gold text-brand-gold"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-brand-gold text-brand-gold"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-brand-gold text-brand-gold"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-brand-gold text-brand-gold"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-brand-gold text-brand-gold"></i>
+                  </div>
+                  <p class="text-sm italic text-slate-600 dark:text-slate-300 leading-relaxed mb-6">"Organized an industrial visit for 120 mechanical engineering students to Bangalore. Destinavia managed the factory approvals, luxury buses, and accommodation flawlessly. A gold standard in student travel management."</p>
+                </div>
+                <div class="flex items-center justify-between border-t border-slate-100 dark:border-slate-800 pt-4">
+                  <div class="flex items-center gap-3">
+                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=120&q=80" alt="Dr. Anirudh Sharma" class="w-10 h-10 rounded-full object-cover">
+                    <div>
+                      <h4 class="font-bold text-sm text-slate-800 dark:text-slate-100">Dr. Anirudh Sharma</h4>
+                      <p class="text-[10px] text-slate-400 font-semibold uppercase">Dean of Engineering, SRM University</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="swiper-slide">
+              <div class="glass-panel p-8 rounded-3xl h-full flex flex-col justify-between text-left relative overflow-hidden bg-white dark:bg-brand-navy border border-slate-200/50 dark:border-slate-800/50 shadow">
+                <div>
+                  <div class="flex items-center gap-1 text-brand-gold mb-4">
+                    <i data-lucide="star" class="w-4 h-4 fill-brand-gold text-brand-gold"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-brand-gold text-brand-gold"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-brand-gold text-brand-gold"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-brand-gold text-brand-gold"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-brand-gold text-brand-gold"></i>
+                  </div>
+                  <p class="text-sm italic text-slate-600 dark:text-slate-300 leading-relaxed mb-6">"Organized an industrial visit for 120 mechanical engineering students to Bangalore. Destinavia managed the factory approvals, luxury buses, and accommodation flawlessly. A gold standard in student travel management."</p>
+                </div>
+                <div class="flex items-center justify-between border-t border-slate-100 dark:border-slate-800 pt-4">
+                  <div class="flex items-center gap-3">
+                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=120&q=80" alt="Dr. Anirudh Sharma" class="w-10 h-10 rounded-full object-cover">
+                    <div>
+                      <h4 class="font-bold text-sm text-slate-800 dark:text-slate-100">Dr. Anirudh Sharma</h4>
+                      <p class="text-[10px] text-slate-400 font-semibold uppercase">Dean of Engineering, SRM University</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            
+            <!-- 2. Priya & Rohan -->
+            <div class="swiper-slide">
+              <div class="glass-panel p-8 rounded-3xl h-full flex flex-col justify-between text-left relative overflow-hidden bg-white dark:bg-brand-navy border border-slate-200/50 dark:border-slate-800/50 shadow">
+                <div>
+                  <div class="flex items-center gap-1 text-brand-gold mb-4">
+                    <i data-lucide="star" class="w-4 h-4 fill-brand-gold text-brand-gold"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-brand-gold text-brand-gold"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-brand-gold text-brand-gold"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-brand-gold text-brand-gold"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-brand-gold text-brand-gold"></i>
+                  </div>
+                  <p class="text-sm italic text-slate-600 dark:text-slate-300 leading-relaxed mb-6">"Our Kashmir trip was an absolute dream. The luxury houseboat was beautiful, and the private dinners were unforgettable. The 24/7 concierge took care of every request instantly."</p>
+                </div>
+                <div class="flex items-center justify-between border-t border-slate-100 dark:border-slate-800 pt-4">
+                  <div class="flex items-center gap-3">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=120&q=80" alt="Priya & Rohan Mehta" class="w-10 h-10 rounded-full object-cover">
+                    <div>
+                      <h4 class="font-bold text-sm text-slate-800 dark:text-slate-100">Priya & Rohan Mehta</h4>
+                      <p class="text-[10px] text-slate-400 font-semibold uppercase">Honeymooners (Delhi)</p>
+                    </div>
+                  </div>
+                  <button class="play-video-btn bg-brand-cyan/20 hover:bg-brand-cyan text-brand-cyan hover:text-slate-950 p-2.5 rounded-full transition-all flex items-center justify-center shrink-0" data-video="https://www.w3schools.com/html/mov_bbb.mp4" data-title="Priya & Rohan Mehta's Experience" aria-label="Play video review">
+                    <i data-lucide="play" class="w-4 h-4 fill-current"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- 3. Vikram Malhotra -->
+            <div class="swiper-slide">
+              <div class="glass-panel p-8 rounded-3xl h-full flex flex-col justify-between text-left relative overflow-hidden bg-white dark:bg-brand-navy border border-slate-200/50 dark:border-slate-800/50 shadow">
+                <div>
+                  <div class="flex items-center gap-1 text-brand-gold mb-4">
+                    <i data-lucide="star" class="w-4 h-4 fill-brand-gold text-brand-gold"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-brand-gold text-brand-gold"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-brand-gold text-brand-gold"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-brand-gold text-brand-gold"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-brand-gold text-brand-gold"></i>
+                  </div>
+                  <p class="text-sm italic text-slate-600 dark:text-slate-300 leading-relaxed mb-6">"Destinavia designed our annual corporate leadership retreat in Goa. The team building games on the private yacht and the beach gala were perfectly integrated. Extremely professional and fully GST compliant."</p>
+                </div>
+                <div class="flex items-center justify-between border-t border-slate-100 dark:border-slate-800 pt-4">
+                  <div class="flex items-center gap-3">
+                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=120&q=80" alt="Vikram Malhotra" class="w-10 h-10 rounded-full object-cover">
+                    <div>
+                      <h4 class="font-bold text-sm text-slate-800 dark:text-slate-100">Vikram Malhotra</h4>
+                      <p class="text-[10px] text-slate-400 font-semibold uppercase">VP of HR, TechCorp Solutions</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 4. Sanya Sen -->
+            <div class="swiper-slide">
+              <div class="glass-panel p-8 rounded-3xl h-full flex flex-col justify-between text-left relative overflow-hidden bg-white dark:bg-brand-navy border border-slate-200/50 dark:border-slate-800/50 shadow">
+                <div>
+                  <div class="flex items-center gap-1 text-brand-gold mb-4">
+                    <i data-lucide="star" class="w-4 h-4 fill-brand-gold text-brand-gold"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-brand-gold text-brand-gold"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-brand-gold text-brand-gold"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-brand-gold text-brand-gold"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-brand-gold text-brand-gold"></i>
+                  </div>
+                  <p class="text-sm italic text-slate-600 dark:text-slate-300 leading-relaxed mb-6">"Traveling solo to Bali for the first time was daunting, but Destinavia made it incredibly safe and enjoyable. The customized itinerary was perfect, balancing yoga retreats with adventure treks."</p>
+                </div>
+                <div class="flex items-center justify-between border-t border-slate-100 dark:border-slate-800 pt-4">
+                  <div class="flex items-center gap-3">
+                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=120&q=80" alt="Sanya Sen" class="w-10 h-10 rounded-full object-cover">
+                    <div>
+                      <h4 class="font-bold text-sm text-slate-800 dark:text-slate-100">Sanya Sen</h4>
+                      <p class="text-[10px] text-slate-400 font-semibold uppercase">Solo Traveler (Kolkata)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 5. Aarav & Meera -->
+            <div class="swiper-slide">
+              <div class="glass-panel p-8 rounded-3xl h-full flex flex-col justify-between text-left relative overflow-hidden bg-white dark:bg-brand-navy border border-slate-200/50 dark:border-slate-800/50 shadow">
+                <div>
+                  <div class="flex items-center gap-1 text-brand-gold mb-4">
+                    <i data-lucide="star" class="w-4 h-4 fill-brand-gold text-brand-gold"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-brand-gold text-brand-gold"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-brand-gold text-brand-gold"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-brand-gold text-brand-gold"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-brand-gold text-brand-gold"></i>
+                  </div>
+                  <p class="text-sm italic text-slate-600 dark:text-slate-300 leading-relaxed mb-6">"Our Kerala houseboat experience was outstanding. Destinavia customized every detail, from the rose-petal setup to the private chef. Absolutely wonderful!"</p>
+                </div>
+                <div class="flex items-center justify-between border-t border-slate-100 dark:border-slate-800 pt-4">
+                  <div class="flex items-center gap-3">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80" alt="Aarav & Meera Patel" class="w-10 h-10 rounded-full object-cover">
+                    <div>
+                      <h4 class="font-bold text-sm text-slate-800 dark:text-slate-100">Aarav & Meera Patel</h4>
+                      <p class="text-[10px] text-slate-400 font-semibold uppercase">Honeymooners (Mumbai)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 6. Neha Kapoor -->
+            <div class="swiper-slide">
+              <div class="glass-panel p-8 rounded-3xl h-full flex flex-col justify-between text-left relative overflow-hidden bg-white dark:bg-brand-navy border border-slate-200/50 dark:border-slate-800/50 shadow">
+                <div>
+                  <div class="flex items-center gap-1 text-brand-gold mb-4">
+                    <i data-lucide="star" class="w-4 h-4 fill-brand-gold text-brand-gold"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-brand-gold text-brand-gold"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-brand-gold text-brand-gold"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-brand-gold text-brand-gold"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-brand-gold text-brand-gold"></i>
+                  </div>
+                  <p class="text-sm italic text-slate-600 dark:text-slate-300 leading-relaxed mb-6">"As a solo female traveler in Japan, safety was my priority. Destinavia provided 24/7 concierge support, pocket Wi-Fi, and detailed transit guides that made the journey completely stress-free."</p>
+                </div>
+                <div class="flex items-center justify-between border-t border-slate-100 dark:border-slate-800 pt-4">
+                  <div class="flex items-center gap-3">
+                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=120&q=80" alt="Neha Kapoor" class="w-10 h-10 rounded-full object-cover">
+                    <div>
+                      <h4 class="font-bold text-sm text-slate-800 dark:text-slate-100">Neha Kapoor</h4>
+                      <p class="text-[10px] text-slate-400 font-semibold uppercase">Solo Traveler (Bangalore)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 7. Aditya Verma -->
+            <div class="swiper-slide">
+              <div class="glass-panel p-8 rounded-3xl h-full flex flex-col justify-between text-left relative overflow-hidden bg-white dark:bg-brand-navy border border-slate-200/50 dark:border-slate-800/50 shadow">
+                <div>
+                  <div class="flex items-center gap-1 text-brand-gold mb-4">
+                    <i data-lucide="star" class="w-4 h-4 fill-brand-gold text-brand-gold"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-brand-gold text-brand-gold"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-brand-gold text-brand-gold"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-brand-gold text-brand-gold"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-brand-gold text-brand-gold"></i>
+                  </div>
+                  <p class="text-sm italic text-slate-600 dark:text-slate-300 leading-relaxed mb-6">"Organized a corporate retreat for 50 leadership team members in Dubai. The dune bashing and VIP private lounge experiences were handled with exceptional professionalism. Outstanding execution."</p>
+                </div>
+                <div class="flex items-center justify-between border-t border-slate-100 dark:border-slate-800 pt-4">
+                  <div class="flex items-center gap-3">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=80" alt="Aditya Verma" class="w-10 h-10 rounded-full object-cover">
+                    <div>
+                      <h4 class="font-bold text-sm text-slate-800 dark:text-slate-100">Aditya Verma</h4>
+                      <p class="text-[10px] text-slate-400 font-semibold uppercase">CEO, V-Tech Group</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 8. Prof. Rajesh Iyer -->
+            <div class="swiper-slide">
+              <div class="glass-panel p-8 rounded-3xl h-full flex flex-col justify-between text-left relative overflow-hidden bg-white dark:bg-brand-navy border border-slate-200/50 dark:border-slate-800/50 shadow">
+                <div>
+                  <div class="flex items-center gap-1 text-brand-gold mb-4">
+                    <i data-lucide="star" class="w-4 h-4 fill-brand-gold text-brand-gold"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-brand-gold text-brand-gold"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-brand-gold text-brand-gold"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-brand-gold text-brand-gold"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-brand-gold text-brand-gold"></i>
+                  </div>
+                  <p class="text-sm italic text-slate-600 dark:text-slate-300 leading-relaxed mb-6">"Managed a massive educational visit to Kashmir for 80 students. From group flight bookings to daily security briefs and meals, Destinavia exceeded expectations in every aspect of coordination."</p>
+                </div>
+                <div class="flex items-center justify-between border-t border-slate-100 dark:border-slate-800 pt-4">
+                  <div class="flex items-center gap-3">
+                    <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=120&q=80" alt="Prof. Rajesh Iyer" class="w-10 h-10 rounded-full object-cover">
+                    <div>
+                      <h4 class="font-bold text-sm text-slate-800 dark:text-slate-100">Prof. Rajesh Iyer</h4>
+                      <p class="text-[10px] text-slate-400 font-semibold uppercase">Faculty Coordinator, IIT Madras</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 9. Sneha & Amit -->
+            <div class="swiper-slide">
+              <div class="glass-panel p-8 rounded-3xl h-full flex flex-col justify-between text-left relative overflow-hidden bg-white dark:bg-brand-navy border border-slate-200/50 dark:border-slate-800/50 shadow">
+                <div>
+                  <div class="flex items-center gap-1 text-brand-gold mb-4">
+                    <i data-lucide="star" class="w-4 h-4 fill-brand-gold text-brand-gold"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-brand-gold text-brand-gold"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-brand-gold text-brand-gold"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-brand-gold text-brand-gold"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-brand-gold text-brand-gold"></i>
+                  </div>
+                  <p class="text-sm italic text-slate-600 dark:text-slate-300 leading-relaxed mb-6">"Our multi-city Europe tour was organized brilliantly. The boutique hotels were in prime locations and the pre-booked high-speed train tickets made travel between cities absolutely seamless."</p>
+                </div>
+                <div class="flex items-center justify-between border-t border-slate-100 dark:border-slate-800 pt-4">
+                  <div class="flex items-center gap-3">
+                    <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=120&q=80" alt="Sneha & Amit Joshi" class="w-10 h-10 rounded-full object-cover">
+                    <div>
+                      <h4 class="font-bold text-sm text-slate-800 dark:text-slate-100">Sneha & Amit Joshi</h4>
+                      <p class="text-[10px] text-slate-400 font-semibold uppercase">Family Group (Pune)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Swiper Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. PHOTO GALLERY (Pinterest Masonry) -->
+    <section id="gallery" class="py-24 bg-slate-50 dark:bg-brand-darkbg relative transition-all">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="text-brand-blue dark:text-brand-cyan text-sm uppercase font-bold tracking-wider block mb-2">Visual Journeys</span>
+          <h2 class="text-3xl md:text-5xl font-extrabold text-gradient mb-4">Destinavia Travel Gallery</h2>
+          <p class="text-slate-600 dark:text-slate-300">A collection of snaps shared by our clients on their premium getaways.</p>
+        </div>
+
+        <div class="pinterest-grid" id="photo-masonry">
+          <div class="masonry-item gallery-item glass-panel rounded-3xl overflow-hidden group cursor-pointer relative transition-transform duration-300 hover:-translate-y-1 shadow">
+            <img src="Img/gallery_tajmahal.jpg" alt="Taj Mahal" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500 select-none">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-0 group-hover:opacity-90 transition-opacity duration-300 flex flex-col justify-end p-6 text-left">
+              <h4 class="text-white font-bold font-serif text-lg">Taj Mahal</h4>
+              <p class="text-xs text-slate-300 font-semibold">Agra, Uttar Pradesh</p>
+            </div>
+          </div>
+          <div class="masonry-item gallery-item glass-panel rounded-3xl overflow-hidden group cursor-pointer relative transition-transform duration-300 hover:-translate-y-1 shadow">
+            <img src="Img/gallery_humayun.jpg" alt="Humayun's Tomb" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500 select-none">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-0 group-hover:opacity-90 transition-opacity duration-300 flex flex-col justify-end p-6 text-left">
+              <h4 class="text-white font-bold font-serif text-lg">Humayun's Tomb</h4>
+              <p class="text-xs text-slate-300 font-semibold">New Delhi, Delhi</p>
+            </div>
+          </div>
+          <div class="masonry-item gallery-item glass-panel rounded-3xl overflow-hidden group cursor-pointer relative transition-transform duration-300 hover:-translate-y-1 shadow">
+            <img src="Img/gallery_kerala.jpg" alt="Alleppey Backwaters" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500 select-none">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-0 group-hover:opacity-90 transition-opacity duration-300 flex flex-col justify-end p-6 text-left">
+              <h4 class="text-white font-bold font-serif text-lg">Alleppey Backwaters</h4>
+              <p class="text-xs text-slate-300 font-semibold">Alappuzha, Kerala</p>
+            </div>
+          </div>
+          <div class="masonry-item gallery-item glass-panel rounded-3xl overflow-hidden group cursor-pointer relative transition-transform duration-300 hover:-translate-y-1 shadow">
+            <img src="Img/gallery_charminar.jpg" alt="Charminar" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500 select-none">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-0 group-hover:opacity-90 transition-opacity duration-300 flex flex-col justify-end p-6 text-left">
+              <h4 class="text-white font-bold font-serif text-lg">Charminar</h4>
+              <p class="text-xs text-slate-300 font-semibold">Hyderabad, Telangana</p>
+            </div>
+          </div>
+          <div class="masonry-item gallery-item glass-panel rounded-3xl overflow-hidden group cursor-pointer relative transition-transform duration-300 hover:-translate-y-1 shadow">
+            <img src="Img/gallery_hawamahal.jpg" alt="Hawa Mahal" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500 select-none">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-0 group-hover:opacity-90 transition-opacity duration-300 flex flex-col justify-end p-6 text-left">
+              <h4 class="text-white font-bold font-serif text-lg">Hawa Mahal</h4>
+              <p class="text-xs text-slate-300 font-semibold">Jaipur, Rajasthan</p>
+            </div>
+          </div>
+          <div class="masonry-item gallery-item glass-panel rounded-3xl overflow-hidden group cursor-pointer relative transition-transform duration-300 hover:-translate-y-1 shadow">
+            <img src="Img/gallery_gateway.jpg" alt="Gateway of India" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500 select-none">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-0 group-hover:opacity-90 transition-opacity duration-300 flex flex-col justify-end p-6 text-left">
+              <h4 class="text-white font-bold font-serif text-lg">Gateway of India</h4>
+              <p class="text-xs text-slate-300 font-semibold">Mumbai, Maharashtra</p>
+            </div>
+          </div>
+          <div class="masonry-item gallery-item glass-panel rounded-3xl overflow-hidden group cursor-pointer relative transition-transform duration-300 hover:-translate-y-1 shadow">
+            <img src="Img/gallery_munnar.jpg" alt="Munnar Tea Hills" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500 select-none">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-0 group-hover:opacity-90 transition-opacity duration-300 flex flex-col justify-end p-6 text-left">
+              <h4 class="text-white font-bold font-serif text-lg">Munnar Tea Hills</h4>
+              <p class="text-xs text-slate-300 font-semibold">Munnar, Kerala</p>
+            </div>
+          </div>
+          <div class="masonry-item gallery-item glass-panel rounded-3xl overflow-hidden group cursor-pointer relative transition-transform duration-300 hover:-translate-y-1 shadow">
+            <img src="Img/gallery_goldentemple.jpg" alt="Golden Temple" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500 select-none">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-0 group-hover:opacity-90 transition-opacity duration-300 flex flex-col justify-end p-6 text-left">
+              <h4 class="text-white font-bold font-serif text-lg">Golden Temple</h4>
+              <p class="text-xs text-slate-300 font-semibold">Amritsar, Punjab</p>
+            </div>
+          </div>
+          <div class="masonry-item gallery-item glass-panel rounded-3xl overflow-hidden group cursor-pointer relative transition-transform duration-300 hover:-translate-y-1 shadow">
+            <img src="Img/gallery_kashmir.jpg" alt="Shikara Sunset" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500 select-none">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-0 group-hover:opacity-90 transition-opacity duration-300 flex flex-col justify-end p-6 text-left">
+              <h4 class="text-white font-bold font-serif text-lg">Shikara Sunset</h4>
+              <p class="text-xs text-slate-300 font-semibold">Dal Lake, Kashmir</p>
+            </div>
+          </div>
+          <div class="masonry-item gallery-item glass-panel rounded-3xl overflow-hidden group cursor-pointer relative transition-transform duration-300 hover:-translate-y-1 shadow">
+            <img src="Img/gallery_rajasthan.jpg" alt="Desert Twilight" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500 select-none">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-0 group-hover:opacity-90 transition-opacity duration-300 flex flex-col justify-end p-6 text-left">
+              <h4 class="text-white font-bold font-serif text-lg">Desert Twilight</h4>
+              <p class="text-xs text-slate-300 font-semibold">Jaisalmer, Rajasthan</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. BLOG SECTION (Visa Guides & Tips) -->
+    <section id="blogs" class="py-24 bg-white dark:bg-brand-navy relative transition-all">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="text-brand-blue dark:text-brand-cyan text-sm uppercase font-bold tracking-wider block mb-2">Insider Knowledge</span>
+          <h2 class="text-3xl md:text-5xl font-extrabold text-gradient mb-4">Latest Travel Insights & Guides</h2>
+          <p class="text-slate-600 dark:text-slate-300">Tips on permits, seasonal packing guidelines, and luxury heritage travel across India.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="blogs-grid">
+          <!-- 1. Ladakh -->
+          <article class="glass-panel p-5 rounded-3xl text-left bg-white dark:bg-brand-navy flex flex-col justify-between shadow hover:shadow-lg transition-all duration-300">
+            <div>
+              <div class="relative overflow-hidden rounded-2xl aspect-[16/10] mb-4">
+                <img src="Img/blog_ladakh.jpg" alt="Ladakh Travel Guide: High-Altitude Acclimatization & Inner Line Permits" class="w-full h-full object-cover">
+                <span class="absolute top-3 left-3 bg-brand-blue text-white text-[9px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full">Permit & Health</span>
+              </div>
+              <span class="text-slate-400 font-bold text-[10px] uppercase block mb-1">August 15, 2026 • 5 min read</span>
+              <h3 class="text-lg font-bold text-slate-800 dark:text-slate-100 leading-snug mb-3 hover:text-brand-blue transition-colors cursor-pointer">Ladakh Travel Guide: High-Altitude Acclimatization & Inner Line Permits</h3>
+              <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed line-clamp-2">Essential advice on obtaining Inner Line Permits (ILP), dealing with altitude sickness in Leh, and packing oxygen gear for Pangong.</p>
+            </div>
+            <a href="#contact" class="text-brand-blue dark:text-brand-cyan font-bold text-xs inline-flex items-center gap-1 hover:underline mt-4">
+              Read Guide <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+            </a>
+          </article>
+          <!-- 2. Kashmir -->
+          <article class="glass-panel p-5 rounded-3xl text-left bg-white dark:bg-brand-navy flex flex-col justify-between shadow hover:shadow-lg transition-all duration-300">
+            <div>
+              <div class="relative overflow-hidden rounded-2xl aspect-[16/10] mb-4">
+                <img src="Img/gallery_kashmir.jpg" alt="What to Pack for Kashmir: Ultimate Seasonal Checklist" class="w-full h-full object-cover">
+                <span class="absolute top-3 left-3 bg-brand-blue text-white text-[9px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full">Packing Guide</span>
+              </div>
+              <span class="text-slate-400 font-bold text-[10px] uppercase block mb-1">July 28, 2026 • 6 min read</span>
+              <h3 class="text-lg font-bold text-slate-800 dark:text-slate-100 leading-snug mb-3 hover:text-brand-blue transition-colors cursor-pointer">What to Pack for Kashmir: Ultimate Seasonal Checklist</h3>
+              <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed line-clamp-2">Prepare for sunny Shikara rides and chilly Gulmarg slopes. Here's what thermal layers, boots, and gear you must carry.</p>
+            </div>
+            <a href="#contact" class="text-brand-blue dark:text-brand-cyan font-bold text-xs inline-flex items-center gap-1 hover:underline mt-4">
+              Read Guide <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+            </a>
+          </article>
+          <!-- 3. Kerala -->
+          <article class="glass-panel p-5 rounded-3xl text-left bg-white dark:bg-brand-navy flex flex-col justify-between shadow hover:shadow-lg transition-all duration-300">
+            <div>
+              <div class="relative overflow-hidden rounded-2xl aspect-[16/10] mb-4">
+                <img src="Img/gallery_kerala.jpg" alt="First-Timer's Guide to Kerala Houseboats & Monsoon Wellness" class="w-full h-full object-cover">
+                <span class="absolute top-3 left-3 bg-brand-blue text-white text-[9px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full">Luxury Stays</span>
+              </div>
+              <span class="text-slate-400 font-bold text-[10px] uppercase block mb-1">August 8, 2026 • 5 min read</span>
+              <h3 class="text-lg font-bold text-slate-800 dark:text-slate-100 leading-snug mb-3 hover:text-brand-blue transition-colors cursor-pointer">First-Timer’s Guide to Kerala Houseboats & Monsoon Wellness</h3>
+              <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed line-clamp-2">Choosing between day cruises and overnight houseboats in Alleppey, booking authentic Ayurveda retreats, and cruising lush backwaters.</p>
+            </div>
+            <a href="#contact" class="text-brand-blue dark:text-brand-cyan font-bold text-xs inline-flex items-center gap-1 hover:underline mt-4">
+              Read Guide <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+            </a>
+          </article>
+          <!-- 4. Rajasthan -->
+          <article class="glass-panel p-5 rounded-3xl text-left bg-white dark:bg-brand-navy flex flex-col justify-between shadow hover:shadow-lg transition-all duration-300">
+            <div>
+              <div class="relative overflow-hidden rounded-2xl aspect-[16/10] mb-4">
+                <img src="Img/gallery_hawamahal.jpg" alt="Royal Rajasthan: Heritage Haveli Stays & Desert Safari Secrets" class="w-full h-full object-cover">
+                <span class="absolute top-3 left-3 bg-brand-blue text-white text-[9px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full">Heritage Guide</span>
+              </div>
+              <span class="text-slate-400 font-bold text-[10px] uppercase block mb-1">August 2, 2026 • 6 min read</span>
+              <h3 class="text-lg font-bold text-slate-800 dark:text-slate-100 leading-snug mb-3 hover:text-brand-blue transition-colors cursor-pointer">Royal Rajasthan: Heritage Haveli Stays & Desert Safari Secrets</h3>
+              <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed line-clamp-2">How to plan the royal circuit across Jaipur, Jodhpur, and Jaisalmer with boutique palace stays, dune camping, and cultural tours.</p>
+            </div>
+            <a href="#contact" class="text-brand-blue dark:text-brand-cyan font-bold text-xs inline-flex items-center gap-1 hover:underline mt-4">
+              Read Guide <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+            </a>
+          </article>
+          <!-- 5. Varanasi -->
+          <article class="glass-panel p-5 rounded-3xl text-left bg-white dark:bg-brand-navy flex flex-col justify-between shadow hover:shadow-lg transition-all duration-300">
+            <div>
+              <div class="relative overflow-hidden rounded-2xl aspect-[16/10] mb-4">
+                <img src="Img/blog_varanasi.jpg" alt="Spiritual Journey: Navigating Varanasi Ghats & Evening Ganga Aarti" class="w-full h-full object-cover">
+                <span class="absolute top-3 left-3 bg-brand-blue text-white text-[9px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full">Cultural Etiquette</span>
+              </div>
+              <span class="text-slate-400 font-bold text-[10px] uppercase block mb-1">July 20, 2026 • 5 min read</span>
+              <h3 class="text-lg font-bold text-slate-800 dark:text-slate-100 leading-snug mb-3 hover:text-brand-blue transition-colors cursor-pointer">Spiritual Journey: Navigating Varanasi Ghats & Evening Ganga Aarti</h3>
+              <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed line-clamp-2">Insider tips on sunrise boat rides along the sacred Ganges, best vantage spots for the Dashashwamedh Aarti, and etiquette.</p>
+            </div>
+            <a href="#contact" class="text-brand-blue dark:text-brand-cyan font-bold text-xs inline-flex items-center gap-1 hover:underline mt-4">
+              Read Guide <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+            </a>
+          </article>
+          <!-- 6. Amritsar -->
+          <article class="glass-panel p-5 rounded-3xl text-left bg-white dark:bg-brand-navy flex flex-col justify-between shadow hover:shadow-lg transition-all duration-300">
+            <div>
+              <div class="relative overflow-hidden rounded-2xl aspect-[16/10] mb-4">
+                <img src="Img/gallery_goldentemple.jpg" alt="Golden Temple Amritsar: Complete Visitor Guide & Langar Traditions" class="w-full h-full object-cover">
+                <span class="absolute top-3 left-3 bg-brand-blue text-white text-[9px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full">Spiritual Guide</span>
+              </div>
+              <span class="text-slate-400 font-bold text-[10px] uppercase block mb-1">July 12, 2026 • 4 min read</span>
+              <h3 class="text-lg font-bold text-slate-800 dark:text-slate-100 leading-snug mb-3 hover:text-brand-blue transition-colors cursor-pointer">Golden Temple Amritsar: Complete Visitor Guide & Langar Traditions</h3>
+              <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed line-clamp-2">Everything you need to know about head coverings, early morning Palki Sahib ceremonies, participating in community Langar, and night views.</p>
+            </div>
+            <a href="#contact" class="text-brand-blue dark:text-brand-cyan font-bold text-xs inline-flex items-center gap-1 hover:underline mt-4">
+              Read Guide <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 12. PARTNER SECTION -->
+    <section class="py-16 bg-slate-50 dark:bg-brand-darkbg border-y border-slate-200 dark:border-slate-800 transition-all select-none">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <p class="text-xs uppercase font-bold tracking-wider text-slate-400 mb-8">Supported by Leading Luxury Hotel Chains</p>
+        
+        <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-70 dark:opacity-60">
+          <img src="Img/taj.svg" alt="Taj Hotels" class="h-10 md:h-12 w-auto object-contain filter grayscale dark:invert brightness-90 dark:brightness-110">
+          <img src="Img/marriott.svg" alt="Marriott" class="h-8 md:h-10 w-auto object-contain filter grayscale dark:invert brightness-90 dark:brightness-110">
+          <img src="Img/radisson.svg" alt="Radisson" class="h-8 md:h-10 w-auto object-contain filter grayscale dark:invert brightness-90 dark:brightness-110">
+          <img src="Img/hilton.svg" alt="Hilton" class="h-10 md:h-12 w-auto object-contain filter grayscale dark:invert brightness-90 dark:brightness-110">
+          <img src="Img/hyatt.svg" alt="Hyatt" class="h-6 md:h-8 w-auto object-contain filter grayscale dark:invert brightness-90 dark:brightness-110">
+        </div>
+      </div>
+    </section>
+
+    <!-- 13. FAQ ACCORDION -->
+    <section id="faq" class="py-24 bg-white dark:bg-brand-navy relative transition-all">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <span class="text-brand-blue dark:text-brand-cyan text-sm uppercase font-bold tracking-wider block mb-2">Help Desk</span>
+          <h2 class="text-3xl md:text-5xl font-extrabold text-gradient mb-4">Frequently Asked Questions</h2>
+        </div>
+
+        <div class="space-y-4" id="faqs-accordion">
+          <!-- FAQ 1 -->
+          <div class="faq-item border border-slate-200 dark:border-slate-800 bg-white dark:bg-brand-navy rounded-2xl overflow-hidden">
+            <button class="faq-trigger w-full px-6 py-5 flex justify-between items-center text-left font-bold text-sm md:text-base text-slate-800 dark:text-slate-100 focus:outline-none select-none" aria-expanded="false" data-idx="0">
+              <span>Are your packages fully customizable?</span>
+              <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-brand-blue transition-transform duration-300"></i>
+            </button>
+            <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+              <p class="px-6 pb-5 text-sm text-slate-500 dark:text-slate-400 leading-relaxed border-t border-slate-100 dark:border-slate-800 pt-4">Absolutely! Every traveler is unique, and so are our itineraries. We can fully tailor your trip—from flight preferences and accommodation styles to daily activities and dining choices—to match your exact budget and travel goals.</p>
+            </div>
+          </div>
+          <!-- FAQ 2 -->
+          <div class="faq-item border border-slate-200 dark:border-slate-800 bg-white dark:bg-brand-navy rounded-2xl overflow-hidden">
+            <button class="faq-trigger w-full px-6 py-5 flex justify-between items-center text-left font-bold text-sm md:text-base text-slate-800 dark:text-slate-100 focus:outline-none select-none" aria-expanded="false" data-idx="1">
+              <span>How does Destinavia support group bookings like industrial visits and college tours?</span>
+              <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-brand-blue transition-transform duration-300"></i>
+            </button>
+            <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+              <p class="px-6 pb-5 text-sm text-slate-500 dark:text-slate-400 leading-relaxed border-t border-slate-100 dark:border-slate-800 pt-4">We offer end-to-end management for group trips, including custom itineraries, group-rate accommodations, bulk transport, industrial access permissions, and dedicated trip coordinators to keep everything running smoothly and safely on the ground.</p>
+            </div>
+          </div>
+          <!-- FAQ 3 -->
+          <div class="faq-item border border-slate-200 dark:border-slate-800 bg-white dark:bg-brand-navy rounded-2xl overflow-hidden">
+            <button class="faq-trigger w-full px-6 py-5 flex justify-between items-center text-left font-bold text-sm md:text-base text-slate-800 dark:text-slate-100 focus:outline-none select-none" aria-expanded="false" data-idx="2">
+              <span>What is your refund and cancellation policy?</span>
+              <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-brand-blue transition-transform duration-300"></i>
+            </button>
+            <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+              <p class="px-6 pb-5 text-sm text-slate-500 dark:text-slate-400 leading-relaxed border-t border-slate-100 dark:border-slate-800 pt-4">Cancellation policies vary depending on your trip details and supplier rules (airlines, hotels, local vendors). We always strive to provide flexible cancellation terms and will clearly outline any non-refundable deposits before you confirm your booking.</p>
+            </div>
+          </div>
+          <!-- FAQ 4 -->
+          <div class="faq-item border border-slate-200 dark:border-slate-800 bg-white dark:bg-brand-navy rounded-2xl overflow-hidden">
+            <button class="faq-trigger w-full px-6 py-5 flex justify-between items-center text-left font-bold text-sm md:text-base text-slate-800 dark:text-slate-100 focus:outline-none select-none" aria-expanded="false" data-idx="3">
+              <span>Do you assist with international visas?</span>
+              <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-brand-blue transition-transform duration-300"></i>
+            </button>
+            <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+              <p class="px-6 pb-5 text-sm text-slate-500 dark:text-slate-400 leading-relaxed border-t border-slate-100 dark:border-slate-800 pt-4">Yes! Our team guides you through the entire visa application process, helping you prepare the correct documentation, schedule appointment slots, and submit your paperwork for a hassle-free approval process.</p>
+            </div>
+          </div>
+          <!-- FAQ 5 -->
+          <div class="faq-item border border-slate-200 dark:border-slate-800 bg-white dark:bg-brand-navy rounded-2xl overflow-hidden">
+            <button class="faq-trigger w-full px-6 py-5 flex justify-between items-center text-left font-bold text-sm md:text-base text-slate-800 dark:text-slate-100 focus:outline-none select-none" aria-expanded="false" data-idx="4">
+              <span>Can I book flights and hotels together as a package?</span>
+              <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-brand-blue transition-transform duration-300"></i>
+            </button>
+            <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+              <p class="px-6 pb-5 text-sm text-slate-500 dark:text-slate-400 leading-relaxed border-t border-slate-100 dark:border-slate-800 pt-4">Yes! Bundling your flights and hotels into a single package is the best way to save time and secure exclusive bundled rates. We can also add airport transfers and activities to complete your journey.</p>
+            </div>
+          </div>
+          <!-- FAQ 6 -->
+          <div class="faq-item border border-slate-200 dark:border-slate-800 bg-white dark:bg-brand-navy rounded-2xl overflow-hidden">
+            <button class="faq-trigger w-full px-6 py-5 flex justify-between items-center text-left font-bold text-sm md:text-base text-slate-800 dark:text-slate-100 focus:outline-none select-none" aria-expanded="false" data-idx="5">
+              <span>Do you offer 24/7 emergency support?</span>
+              <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-brand-blue transition-transform duration-300"></i>
+            </button>
+            <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+              <p class="px-6 pb-5 text-sm text-slate-500 dark:text-slate-400 leading-relaxed border-t border-slate-100 dark:border-slate-800 pt-4">Yes. Whenever you are on a trip booked through Destinavia, you have access to a dedicated 24/7 support manager to assist with travel delays, emergency rebookings, or any urgent inquiries.</p>
+            </div>
+          </div>
+          <!-- FAQ 7 -->
+          <div class="faq-item border border-slate-200 dark:border-slate-800 bg-white dark:bg-brand-navy rounded-2xl overflow-hidden">
+            <button class="faq-trigger w-full px-6 py-5 flex justify-between items-center text-left font-bold text-sm md:text-base text-slate-800 dark:text-slate-100 focus:outline-none select-none" aria-expanded="false" data-idx="6">
+              <span>What payment methods do you accept?</span>
+              <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-brand-blue transition-transform duration-300"></i>
+            </button>
+            <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+              <p class="px-6 pb-5 text-sm text-slate-500 dark:text-slate-400 leading-relaxed border-t border-slate-100 dark:border-slate-800 pt-4">We accept credit/debit cards, net banking, UPI, wire transfers, and popular digital wallets. For larger custom packages, we also offer structured payment plans upon request.</p>
+            </div>
+          </div>
+          <!-- FAQ 8 -->
+          <div class="faq-item border border-slate-200 dark:border-slate-800 bg-white dark:bg-brand-navy rounded-2xl overflow-hidden">
+            <button class="faq-trigger w-full px-6 py-5 flex justify-between items-center text-left font-bold text-sm md:text-base text-slate-800 dark:text-slate-100 focus:outline-none select-none" aria-expanded="false" data-idx="7">
+              <span>Are flight tickets included in the package prices?</span>
+              <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-brand-blue transition-transform duration-300"></i>
+            </button>
+            <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+              <p class="px-6 pb-5 text-sm text-slate-500 dark:text-slate-400 leading-relaxed border-t border-slate-100 dark:border-slate-800 pt-4">It depends on your preference! We offer both land-only packages and all-inclusive flight-plus-land packages. The exact breakdown will always be clearly listed before you confirm your booking.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 14. CONTACT SECTION -->
+    <section id="contact" class="py-24 bg-slate-50 dark:bg-brand-darkbg relative overflow-hidden transition-all">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+          
+          <!-- Contact Inquiry Form -->
+          <div class="glass-panel p-8 md:p-12 rounded-3xl shadow-xl">
+            <h3 class="text-2xl md:text-3xl font-extrabold mb-2 text-gradient">Submit An Inquiry</h3>
+            <p class="text-sm text-slate-500 dark:text-slate-400 mb-8">Tell us about your holiday plans and get customized proposals within 45 minutes.</p>
+
+            <form id="inquiry-form" class="space-y-5">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="form-name" class="block text-xs font-bold text-slate-400 uppercase mb-2">Full Name</label>
+                  <input type="text" id="form-name" placeholder="Rohan" class="w-full bg-slate-100/50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl px-4 py-3 text-sm focus:border-brand-blue outline-none transition-colors" required>
+                </div>
+                <div>
+                  <label for="form-phone" class="block text-xs font-bold text-slate-400 uppercase mb-2">Phone Number</label>
+                  <input type="tel" id="form-phone" placeholder="+91 88990 70076" class="w-full bg-slate-100/50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl px-4 py-3 text-sm focus:border-brand-blue outline-none transition-colors" required>
+                </div>
+              </div>
+
+              <div>
+                <label for="form-email" class="block text-xs font-bold text-slate-400 uppercase mb-2">Email Address</label>
+                <input type="email" id="form-email" placeholder="rohan@example.com" class="w-full bg-slate-100/50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl px-4 py-3 text-sm focus:border-brand-blue outline-none transition-colors" required>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="form-dest" class="block text-xs font-bold text-slate-400 uppercase mb-2">Destination</label>
+                  <input type="text" id="form-dest" placeholder="e.g. Kashmir, Dubai" class="w-full bg-slate-100/50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl px-4 py-3 text-sm focus:border-brand-blue outline-none transition-colors" required>
+                </div>
+                <div>
+                  <label for="form-pax" class="block text-xs font-bold text-slate-400 uppercase mb-2">Total Travelers</label>
+                  <input type="number" id="form-pax" min="1" placeholder="2" class="w-full bg-slate-100/50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl px-4 py-3 text-sm focus:border-brand-blue outline-none transition-colors" required>
+                </div>
+              </div>
+
+              <div>
+                <label for="form-notes" class="block text-xs font-bold text-slate-400 uppercase mb-2">Custom Requests / Notes</label>
+                <textarea id="form-notes" rows="4" placeholder="e.g., Honeymoon package under ₹70,000, 5-Star hotels, flight inclusions, or Student Industrial Visit layout details..." class="w-full bg-slate-100/50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl px-4 py-3 text-sm focus:border-brand-blue outline-none transition-colors resize-none"></textarea>
+              </div>
+
+              <!-- GDPR/T&C Checkbox -->
+              <div class="flex items-start gap-2">
+                <input type="checkbox" id="form-gdpr" class="mt-1 cursor-pointer" required>
+                <label for="form-gdpr" class="text-xs text-slate-400 select-none cursor-pointer">I agree to receive communications regarding my booking via WhatsApp, SMS and Email.</label>
+              </div>
+
+              <button type="submit" class="btn-premium-primary w-full bg-brand-blue hover:bg-blue-700 text-white font-bold py-4 rounded-xl text-sm transition-all shadow-lg hover:shadow-blue-500/20">
+                Send Booking Inquiry
+              </button>
+            </form>
+          </div>
+
+          <!-- Contact Details -->
+          <div class="space-y-10 text-left">
+            <div>
+              <span class="text-brand-blue dark:text-brand-cyan text-sm uppercase font-bold tracking-wider block mb-2">Contact Us</span>
+              <h2 class="text-3xl font-extrabold text-gradient mb-6">Connect With Our Travel concierge</h2>
+              
+              <div class="space-y-6">
+                <!-- Location -->
+                <div class="flex items-start gap-4">
+                  <div class="p-3 bg-blue-500/10 rounded-2xl text-brand-blue">
+                    <i data-lucide="map-pin" class="w-6 h-6"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-lg">HQ Office Address</h4>
+                    <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">43/2684-A2,Suite No. D5,Kolathara road Rahman Bazar Kozhikode Kerala 673655.</p>
+                  </div>
+                </div>
+
+                <!-- Call and WhatsApp -->
+                <div class="flex items-start gap-4">
+                  <div class="p-3 bg-cyan-500/10 rounded-2xl text-brand-cyan">
+                    <i data-lucide="phone-call" class="w-6 h-6"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-lg">Instant Support Helpline</h4>
+                    <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">Call: +91 88990 70076 (24x7 Coverage)</p>
+                  </div>
+                </div>
+
+                <!-- Email -->
+                <div class="flex items-start gap-4">
+                  <div class="p-3 bg-purple-500/10 rounded-2xl text-purple-400">
+                    <i data-lucide="mail" class="w-6 h-6"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-lg">Inquiries & Partnerships</h4>
+                    <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">General: destinavia.in@gmail.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Styled Map SVG Mockup (Luxury vector layout instead of raw Google Map frames) -->
+            <div class="relative w-full h-[260px] bg-slate-900 rounded-3xl border border-slate-800 overflow-hidden shadow-lg flex items-center justify-center">
+              <!-- Grid background -->
+              <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,#1e293b_1px,transparent_1px)] bg-[size:1.5rem_1.5rem] opacity-30"></div>
+              
+              <!-- Mock routes -->
+              <svg class="absolute inset-0 w-full h-full text-slate-700/30" xmlns="http://www.w3.org/2000/svg">
+                <path d="M 50,150 Q 150,50 300,100 T 450,130" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="6,6"/>
+                <path d="M 80,60 Q 200,200 350,70" fill="none" stroke="#2563EB" stroke-width="1.5" stroke-dasharray="4,4" class="animate-pulse"/>
+                <path d="M 20,200 Q 180,120 400,220" fill="none" stroke="currentColor" stroke-width="2"/>
+              </svg>
+
+              <!-- Central glowing point -->
+              <div class="relative z-10 text-center">
+                <div class="relative inline-block mb-3">
+                  <div class="w-12 h-12 bg-brand-blue/30 rounded-full flex items-center justify-center animate-ping absolute"></div>
+                  <div class="w-12 h-12 bg-brand-blue border-2 border-white rounded-full flex items-center justify-center relative">
+                    <i data-lucide="map-pin" class="w-6 h-6 text-white"></i>
+                  </div>
+                </div>
+                <h4 class="font-bold text-sm text-white">Destinavia HQ (Calicut)</h4>
+                <p class="text-xs text-slate-500 font-medium">Click to navigate on Google Maps</p>
+              </div>
+
+              <!-- Map Navigation Link -->
+              <a href="https://maps.google.com" target="_blank" rel="noopener" class="absolute inset-0 z-20" aria-label="Open location in google maps"></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 15. LARGE FOOTER -->
+  <footer class="bg-brand-navy text-slate-300 border-t border-slate-800 relative z-30 transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-16">
+        
+        <!-- About & Logo -->
+        <div class="lg:col-span-2 text-left">
+          <img src="logo.jpg" alt="Destinavia Logo" class="h-10 w-auto mb-6 object-contain rounded-md" />
+          <p class="text-sm text-slate-400 max-w-sm mb-6 leading-relaxed">
+            Destinavia is a premium travel technology platform curating extraordinary journeys. From student industrial tours to bespoke romantic honey-moons.
+          </p>
+          <div class="flex gap-4">
+            <a href="https://www.facebook.com/profile.php?id=61570406192272&sk=about" target="_blank" rel="noopener noreferrer" class="p-2.5 bg-slate-800 hover:bg-brand-blue text-white rounded-full transition-colors inline-flex items-center justify-center" aria-label="Facebook Link">
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/destinavia.in/" target="_blank" rel="noopener noreferrer" class="p-2.5 bg-slate-800 hover:bg-brand-blue text-white rounded-full transition-colors inline-flex items-center justify-center" aria-label="Instagram Link">
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+              </svg>
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer" class="p-2.5 bg-slate-800 hover:bg-brand-blue text-white rounded-full transition-colors inline-flex items-center justify-center" aria-label="Twitter / X Link">
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/company/destinavia/" target="_blank" rel="noopener noreferrer" class="p-2.5 bg-slate-800 hover:bg-brand-blue text-white rounded-full transition-colors inline-flex items-center justify-center" aria-label="LinkedIn Link">
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                <rect width="4" height="12" x="2" y="9"/>
+                <circle cx="4" cy="4" r="2"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="text-left">
+          <h4 class="text-white text-sm font-bold uppercase tracking-wider mb-6">Quick Links</h4>
+          <ul class="space-y-3.5 text-sm">
+            <li><a href="#destinations" class="hover:text-brand-cyan transition-colors">Our Destinations</a></li>
+            <li><a href="#packages" class="hover:text-brand-cyan transition-colors">Tour Packages</a></li>
+            <li><a href="#sectors" class="hover:text-brand-cyan transition-colors">Special Sectors</a></li>
+            <li><a href="#about" class="hover:text-brand-cyan transition-colors">Why Choose Us</a></li>
+            <li><a href="#faq" class="hover:text-brand-cyan transition-colors">FAQ & Support</a></li>
+          </ul>
+        </div>
+
+        <!-- Destinations -->
+        <div class="text-left">
+          <h4 class="text-white text-sm font-bold uppercase tracking-wider mb-6">Top Hotspots</h4>
+          <ul class="space-y-3.5 text-sm">
+            <li><a href="#packages" onclick="filterByDestination('Kashmir')" class="hover:text-brand-cyan transition-colors">Kashmir Valley</a></li>
+            <li><a href="#packages" onclick="filterByDestination('Bali')" class="hover:text-brand-cyan transition-colors">Manali</a></li>
+            <li><a href="#packages" onclick="filterByDestination('Dubai')" class="hover:text-brand-cyan transition-colors">Golden Triangle</a></li>
+            <li><a href="#packages" onclick="filterByDestination('Kerala')" class="hover:text-brand-cyan transition-colors">Kerala Backwaters</a></li>
+            <li><a href="#packages" onclick="filterByDestination('Europe')" class="hover:text-brand-cyan transition-colors">Lakshadweep</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter & Downloads -->
+        <div class="text-left">
+          <h4 class="text-white text-sm font-bold uppercase tracking-wider mb-6">Stay Extraordinary</h4>
+          <p class="text-xs text-slate-400 mb-4">At Destinavia, we believe travel should be more than simply reaching a destination. It should be an experience worth remembering.</p>
+          
+          <button id="brochure-download-btn" class="w-full border border-slate-800 bg-slate-900 hover:bg-slate-800 text-white font-bold py-3 px-4 rounded-xl text-xs flex items-center justify-center gap-2 transition-colors">
+            <i data-lucide="download" class="w-4 h-4"></i> Download Company Brochure
+          </button>
+        </div>
+
+      </div>
+
+      <div class="h-[1px] bg-slate-800 mb-8"></div>
+
+      <!-- Legal Links and Copyright -->
+      <div class="flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-slate-500 text-center sm:text-left">
+        <p>&copy; 2026 Destinavia LLP. All Rights Reserved. LLPIN: ADA-9667 Registered Office: Calicut, Kerala, India.</p>
+        <div class="flex gap-4">
+          <a href="#" class="hover:text-slate-400 transition-colors">Privacy Policy</a>
+          <a href="#" class="hover:text-slate-400 transition-colors">Terms of Service</a>
+          <a href="#" class="hover:text-slate-400 transition-colors">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== PERSISTENT & FLOATING WIDGETS ==================== -->
+
+  <!-- A. STICKY BOOKING DRAWER (Triggers on scroll past Hero) -->
+  <div id="sticky-booking-bar" class="fixed bottom-0 left-0 right-0 z-40 bg-white/95 dark:bg-brand-navy/95 border-t border-slate-200 dark:border-slate-800 shadow-2xl transition-transform duration-500 translate-y-full py-4 px-6 md:px-8">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+      <div class="flex items-center gap-4">
+        <div class="hidden sm:block p-2 bg-blue-500/10 rounded-xl text-brand-blue shrink-0">
+          <i data-lucide="compass" class="w-6 h-6"></i>
+        </div>
+        <div class="text-left">
+          <h4 class="font-bold text-sm md:text-base">Ready to organize your extraordinary trip?</h4>
+          <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Custom quotes prepared in minutes. Direct WhatsApp connectivity active.</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-3 w-full md:w-auto">
+        <a href="https://wa.me/918899070076" target="_blank" rel="noopener" class="flex-1 md:flex-initial bg-green-600 hover:bg-green-700 text-white font-bold px-5 py-2.5 rounded-full text-xs flex items-center justify-center gap-1.5 transition-colors">
+          <i data-lucide="message-square" class="w-4.5 h-4.5"></i> Chat on WhatsApp
+        </a>
+        <button id="sticky-inquire-btn" class="flex-1 md:flex-initial bg-brand-blue hover:bg-brand-blue/80 text-white font-bold px-6 py-2.5 rounded-full text-xs flex items-center justify-center gap-1.5 transition-all">
+          <i data-lucide="sparkles" class="w-4.5 h-4.5"></i> Request Callback
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- B. FLOATING CHATBOT WIDGET -->
+  <div id="ai-chat-widget" class="fixed bottom-24 right-6 z-50 flex flex-col items-end">
+    <!-- Chat Dialog Panel -->
+    <div id="ai-chat-panel" class="hidden w-[350px] sm:w-[400px] h-[500px] glass-panel rounded-3xl shadow-2xl mb-4 overflow-hidden flex flex-col border border-slate-700/50">
+      <!-- Chat Head -->
+      <div class="bg-gradient-to-r from-brand-navy to-slate-900 text-white px-5 py-4 border-b border-slate-800 flex items-center justify-between">
+        <div class="flex items-center gap-2.5">
+          <div class="w-9 h-9 rounded-xl bg-brand-cyan flex items-center justify-center">
+            <i data-lucide="bot" class="w-5 h-5 text-slate-950"></i>
+          </div>
+          <div class="text-left">
+            <h4 class="font-bold text-sm">Destinavia AI Assistant</h4>
+            <span class="text-[10px] text-green-400 font-semibold flex items-center gap-1">
+              <span class="w-1.5 h-1.5 bg-green-400 rounded-full animate-ping"></span> Online
+            </span>
+          </div>
+        </div>
+        <button id="ai-chat-close" class="text-slate-400 hover:text-white transition-colors" aria-label="Close chat window">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <!-- Chat Messages Container -->
+      <div id="ai-chat-messages" class="flex-1 overflow-y-auto p-4 space-y-4 text-sm bg-slate-50/50 dark:bg-slate-950/50">
+        <div class="flex gap-2">
+          <div class="w-7 h-7 rounded-lg bg-brand-cyan flex items-center justify-center shrink-0">
+            <i data-lucide="bot" class="w-4 h-4 text-slate-950"></i>
+          </div>
+          <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 px-3.5 py-2.5 rounded-2xl max-w-[80%] text-left">
+            Hello! I am your Desti Guide by Destinavia AI concierge. Looking for a luxury Honeymoon, a Corporate retreat, or an Industrial visit? Drop your request below!
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick prompts in widget -->
+      <div class="px-4 py-2 border-t border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-slate-900/50 flex gap-2 overflow-x-auto whitespace-nowrap scrollbar-none select-none">
+        <button class="chat-chip text-xs bg-slate-100 dark:bg-slate-800 hover:bg-brand-blue hover:text-white px-3 py-1.5 rounded-full border border-slate-200 dark:border-slate-700 transition-colors">Munnar Honeymoon</button>
+        <button class="chat-chip text-xs bg-slate-100 dark:bg-slate-800 hover:bg-brand-blue hover:text-white px-3 py-1.5 rounded-full border border-slate-200 dark:border-slate-700 transition-colors">Industrial Visits</button>
+        <button class="chat-chip text-xs bg-slate-100 dark:bg-slate-800 hover:bg-brand-blue hover:text-white px-3 py-1.5 rounded-full border border-slate-200 dark:border-slate-700 transition-colors">Dubai Deals</button>
+      </div>
+
+      <!-- Input Field -->
+      <form id="ai-chat-form" class="p-3 border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 flex gap-2">
+        <input type="text" id="ai-chat-input" placeholder="Ask about places, prices, inclusions..." class="flex-1 bg-slate-100 dark:bg-slate-850 border border-slate-200 dark:border-slate-800 rounded-xl px-4 py-2.5 text-xs text-slate-900 dark:text-white focus:border-brand-blue outline-none transition-colors">
+        <button type="submit" class="bg-brand-blue text-white p-2.5 rounded-xl flex items-center justify-center hover:bg-blue-700 transition-colors" aria-label="Send message">
+          <i data-lucide="send" class="w-4 h-4"></i>
+        </button>
+      </form>
+    </div>
+
+    <!-- Floating Chat Trigger Button -->
+    <button id="ai-chat-trigger" class="w-14 h-14 bg-gradient-to-tr from-brand-blue to-brand-cyan hover:shadow-lg hover:shadow-cyan-500/30 text-white rounded-full flex items-center justify-center shadow-xl hover:scale-105 transition-all duration-300 relative" aria-label="Open AI Assistant chat">
+      <i data-lucide="bot" class="w-7 h-7"></i>
+      <!-- Unread dot -->
+      <span class="absolute top-0 right-0 w-3 h-3 bg-red-500 rounded-full border-2 border-white dark:border-brand-darkbg"></span>
+    </button>
+  </div>
+
+  <!-- C. FLOATING WHATSAPP CTA -->
+  <a href="https://wa.me/918899070076" target="_blank" rel="noopener" class="fixed bottom-6 right-6 z-45 w-14 h-14 bg-green-500 hover:bg-green-600 hover:shadow-lg hover:shadow-green-500/30 text-white rounded-full flex items-center justify-center shadow-xl hover:scale-105 transition-all duration-300" aria-label="Open WhatsApp Chat Support">
+    <i data-lucide="message-circle" class="w-7 h-7"></i>
+  </a>
+
+  <!-- D. LIVE VISITOR COUNTER & WEATHER WIDGET (Bottom-Left Float) -->
+  <div class="fixed bottom-6 left-6 z-40 hidden md:flex flex-col gap-2 select-none pointer-events-auto">
+    <!-- Weather Widget -->
+    <div id="weather-widget" class="weather-card glass-panel px-4 py-2.5 rounded-2xl flex items-center gap-3 border border-slate-200 dark:border-slate-800 text-xs shadow-lg max-w-[220px]">
+      <div class="p-1.5 bg-yellow-500/20 text-brand-gold rounded-lg">
+        <i data-lucide="sun" class="w-4 h-4 animate-spin" style="animation-duration: 20s;"></i>
+      </div>
+      <div class="text-left">
+        <p class="font-bold tracking-tight" id="weather-dest-name">Kashmir</p>
+        <p class="text-[10px] text-slate-400" id="weather-dest-temp">16°C • Sunny</p>
+      </div>
+      
+      <button id="weather-next-btn" class="p-1 text-slate-400 hover:text-brand-blue" aria-label="Next weather destination">
+        <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+      </button>
+    </div>
+
+    <!-- Live Visitor -->
+    <div class="glass-panel px-4 py-2 rounded-2xl flex items-center gap-2 border border-slate-200 dark:border-slate-800 text-[10px] font-bold tracking-wide uppercase shadow-md max-w-[200px]">
+      <span class="w-2 h-2 rounded-full bg-green-500 inline-block animate-pulse live-glow"></span>
+      <span id="visitor-counter">142</span> Active Viewers
+    </div>
+  </div>
+
+  <!-- E. BACK TO TOP BUTTON -->
+  <button id="back-to-top" class="fixed bottom-24 left-6 z-40 hidden w-10 h-10 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-200 rounded-full flex items-center justify-center shadow-lg opacity-0 transition-opacity duration-300 hover:bg-slate-100 dark:hover:bg-slate-700" aria-label="Scroll back to top">
+    <i data-lucide="chevron-up" class="w-5 h-5"></i>
+  </button>
+
+  <!-- ==================== PREMIUM OVERLAY MODALS ==================== -->
+
+  <!-- 1. LIGHTBOX MODAL (For Gallery and Videos) -->
+  <div id="lightbox-modal" class="fixed inset-0 z-50 bg-black/95 hidden flex-col items-center justify-center p-4">
+    <button id="lightbox-close" class="absolute top-6 right-6 text-slate-400 hover:text-white p-2" aria-label="Close Lightbox">
+      <i data-lucide="x" class="w-8 h-8"></i>
+    </button>
+    
+    <div class="max-w-4xl max-h-[80vh] w-full flex items-center justify-center relative select-none">
+      <img id="lightbox-img" src="" alt="Enlarged View" class="max-w-full max-h-[85vh] rounded-lg object-contain hidden">
+      <video id="lightbox-video" src="" controls class="max-w-full max-h-[85vh] rounded-lg hidden"></video>
+    </div>
+    
+    <div class="text-center mt-6 text-white max-w-xl">
+      <h4 id="lightbox-title" class="text-xl font-bold font-serif mb-1"></h4>
+      <p id="lightbox-desc" class="text-xs text-slate-400"></p>
+    </div>
+  </div>
+
+  <!-- 2. DETAIL & BOOKING MODAL (For Packages) -->
+  <div id="details-modal" class="fixed inset-0 z-50 bg-black/75 hidden flex items-center justify-center p-4 overflow-y-auto">
+    <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl w-full max-w-4xl overflow-hidden shadow-2xl relative flex flex-col md:flex-row max-h-[90vh]">
+      <!-- Close Button -->
+      <button id="details-close" class="absolute top-4 right-4 z-20 bg-slate-900/60 hover:bg-slate-900 text-white rounded-full p-2" aria-label="Close package details">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <!-- Left Column: Media -->
+      <div class="w-full md:w-1/2 relative h-56 md:h-auto overflow-hidden">
+        <img id="modal-pkg-image" src="" alt="Package Image" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent md:bg-gradient-to-r md:from-transparent md:to-transparent"></div>
+        <span id="modal-pkg-badge" class="absolute top-4 left-4 bg-brand-blue text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1.5 rounded-full"></span>
+      </div>
+
+      <!-- Right Column: Info & Inquiry -->
+      <div class="w-full md:w-1/2 p-6 md:p-8 overflow-y-auto flex flex-col justify-between text-left">
+        <div>
+          <span id="modal-pkg-category" class="text-brand-blue dark:text-brand-cyan text-xs uppercase font-bold tracking-wider">Honeymoon</span>
+          <h3 id="modal-pkg-title" class="text-2xl md:text-3xl font-extrabold my-2 text-slate-900 dark:text-white leading-tight">Munnar Honeymoon Escape</h3>
+          
+          <div class="flex items-center gap-4 text-xs font-semibold text-slate-500 mb-6">
+            <span class="flex items-center gap-1"><i data-lucide="clock" class="w-4 h-4 text-brand-blue"></i> <span id="modal-pkg-duration">6D / 5N</span></span>
+            <span class="flex items-center gap-1"><i data-lucide="star" class="w-4 h-4 text-brand-gold fill-brand-gold"></i> <span id="modal-pkg-rating">4.8</span></span>
+          </div>
+
+          <div class="border-y border-slate-100 dark:border-slate-800 py-4 mb-6">
+            <p class="text-xs text-slate-400 font-bold uppercase mb-2">Package Highlights</p>
+            <ul id="modal-pkg-highlights" class="space-y-1 text-sm list-disc pl-5 text-slate-600 dark:text-slate-400">
+              <!-- Render highlights -->
+            </ul>
+          </div>
+
+          <div>
+            <p class="text-xs text-slate-400 font-bold uppercase mb-2">Standard Inclusions</p>
+            <div id="modal-pkg-inclusions" class="flex flex-wrap gap-2">
+              <!-- Render inclusions chips -->
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-8 pt-6 border-t border-slate-100 dark:border-slate-800 flex justify-between items-center">
+          <div>
+            <p class="text-[10px] text-slate-400 font-bold uppercase">Starting price</p>
+            <p class="text-2xl md:text-3xl font-black text-brand-blue" id="modal-pkg-price">₹68,000</p>
+            <p class="text-[9px] text-slate-500">*Exclusive of GST</p>
+          </div>
+          <button id="modal-book-now" class="bg-brand-blue hover:bg-blue-700 text-white font-bold px-8 py-3 rounded-full text-sm transition-all shadow-md">
+            Inquire Details
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. WISHLIST PANEL (Slide-over drawer) -->
+  <div id="wishlist-drawer" class="fixed inset-0 z-50 bg-black/60 hidden justify-end">
+    <div class="w-full max-w-md bg-white dark:bg-slate-900 h-full p-6 shadow-2xl flex flex-col justify-between text-left">
+      <div>
+        <div class="flex justify-between items-center mb-6">
+          <h3 class="text-xl font-bold flex items-center gap-2"><i data-lucide="heart" class="text-red-500 fill-red-500"></i> My Wishlist</h3>
+          <button id="wishlist-close" class="text-slate-400 hover:text-slate-900 dark:hover:text-white p-1" aria-label="Close wishlist panel">
+            <i data-lucide="x" class="w-6 h-6"></i>
+          </button>
+        </div>
+
+        <div id="wishlist-items-container" class="space-y-4 overflow-y-auto max-h-[70vh]">
+          <!-- Dynamic wishlist items render -->
+        </div>
+
+        <div id="wishlist-empty-msg" class="hidden text-center py-12 text-slate-400">
+          <i data-lucide="heart" class="w-10 h-10 mx-auto mb-3 text-slate-600"></i>
+          <p class="text-sm">Your wishlist is empty. Browse packages and click <i data-lucide="heart" class="w-3.5 h-3.5 inline"></i> to add them.</p>
+        </div>
+      </div>
+
+      <button id="wishlist-inquire-all" class="w-full bg-brand-blue hover:bg-blue-700 text-white font-bold py-3.5 rounded-xl text-sm transition-all">
+        Inquire For All Items
+      </button>
+    </div>
+  </div>
+
+  <!-- 4. COMPARE PANEL (Slide-over drawer) -->
+  <div id="compare-drawer" class="fixed inset-0 z-50 bg-black/60 hidden justify-end">
+    <div class="w-full max-w-lg bg-white dark:bg-slate-900 h-full p-6 shadow-2xl flex flex-col justify-between text-left">
+      <div>
+        <div class="flex justify-between items-center mb-6">
+          <h3 class="text-xl font-bold flex items-center gap-2"><i data-lucide="git-compare" class="text-brand-cyan"></i> Compare Packages</h3>
+          <button id="compare-close" class="text-slate-400 hover:text-slate-900 dark:hover:text-white p-1" aria-label="Close comparison panel">
+            <i data-lucide="x" class="w-6 h-6"></i>
+          </button>
+        </div>
+
+        <div id="compare-items-container" class="space-y-4 overflow-y-auto max-h-[75vh]">
+          <!-- Dynamic comparison items render -->
+        </div>
+
+        <div id="compare-empty-msg" class="hidden text-center py-12 text-slate-400">
+          <i data-lucide="git-compare" class="w-10 h-10 mx-auto mb-3 text-slate-600"></i>
+          <p class="text-sm">Add 2 or more packages to comparison drawer using the comparison icon.</p>
+        </div>
+      </div>
+
+      <div class="flex gap-2">
+        <button id="compare-clear-all" class="flex-1 border border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 text-sm font-bold py-3 rounded-xl transition-colors">Clear All</button>
+        <button id="compare-inquire-btn" class="flex-1 bg-brand-blue hover:bg-blue-700 text-white font-bold py-3 rounded-xl text-sm transition-all">Compare & Inquire</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Javascript Libraries -->
+  <!-- GSAP & ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <!-- Lenis Smooth Scroll -->
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1/dist/lenis.min.js"></script>
+  <!-- Swiper Carousel JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Canvas Confetti -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+  <!-- Core Page Logic Scripts -->
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

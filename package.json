@@ -1,0 +1,16 @@
+{
+  "name": "destinavia",
+  "version": "1.0.0",
+  "description": "Destinavia - Premium Travel Technology Platform",
+  "scripts": {
+    "start": "npx serve -l 3000 .",
+    "serve": "npx serve -l 3000 .",
+    "dev": "python -m http.server 3000"
+  },
+  "keywords": [
+    "travel",
+    "destinavia"
+  ],
+  "author": "Destinavia",
+  "license": "ISC"
+}

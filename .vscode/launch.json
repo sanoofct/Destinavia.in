@@ -1,0 +1,25 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "msedge",
+            "request": "launch",
+            "name": "Launch Edge (Localhost:3000)",
+            "url": "http://localhost:3000/index.html",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "type": "msedge",
+            "request": "launch",
+            "name": "Launch Edge (Live Server :5500)",
+            "url": "http://localhost:5500/index.html",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "type": "msedge",
+            "request": "launch",
+            "name": "Open index.html (Direct File)",
+            "file": "${workspaceFolder}\\index.html"
+        }
+    ]
+}
